@@ -191,6 +191,21 @@ a {
     }
 
 
+#demo1 {
+    max-width: 1000px;
+    margin: 0 auto; /* Centers the carousel */
+}
+
+.carousel1-item {
+    height: 650px; /* Change this to your desired height */
+}
+
+    .carousel1-item img {
+        height: 500px;
+        object-fit: cover; /* This prevents the image from looking squashed */
+    }
+
+
 
 
 
