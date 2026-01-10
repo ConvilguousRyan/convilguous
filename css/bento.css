@@ -1,0 +1,185 @@
+/* Container Setup */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 4 equal columns */
+    grid-auto-rows: 200px; /* Standard height for rows */
+    gap: 16px; /* Space between cards */
+    padding: 20px;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+/* Base Card Styling */
+.card {
+    background-color: #f0f0f0;
+    border-radius: 24px; /* The signature rounded look */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 1px solid #ddd;
+}
+
+/* Sizing specific cards */
+.card-large {
+    grid-column: span 2;
+    grid-row: span 4;
+    background-color: #d1e8ff;
+}
+
+.card-big {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #d1e8ff;
+}
+
+.card-wide {
+    grid-column: span 2;
+    background-color: #ffe4bc;
+}
+
+.card-medium {
+    grid-row: span 2;
+    background-color: #d8f3dc;
+}
+
+/* Responsive: Stack cards on smaller screens */
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-large, .card-wide, .card-medium {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+
+/*Box Color*/
+.card-gold {
+    background-color: #D9A426;
+}
+
+.card-silver {
+    background-color: #D9DEE3;
+}
+
+.card-darknavy {
+    background-color: #0D2533;
+}
+
+.card-lightnavy {
+    background-color: #1D3C4D;
+}
+
+
+/* Base card style for smooth transition */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Makes it feel interactive */
+}
+
+    /* Hover state */
+    .card:hover {
+        transform: translateY(-8px); /* Lifts the card up */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a shadow depth */
+        z-index: 10; /* Ensures the card sits on top of others while lifting */
+    }
+
+        .card:hover img {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+
+
+/* Base Card Styling */
+.box {
+    background-color: #f0f0f0;
+    border-radius: 24px; /* The signature rounded look */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    min-height: 400px; /* Adjust height as needed */
+    border-radius: 1.5rem;
+    overflow: hidden; /* Keeps content inside */
+}
+
+/* Sizing specific cards */
+.box-large {
+    grid-column: span 2;
+    grid-row: span 3;
+    background-color: #d1e8ff;
+}
+
+.box-big {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #d1e8ff;
+}
+
+.box-wide {
+    grid-column: span 2;
+    background-color: #ffe4bc;
+}
+
+.box-medium {
+    grid-row: span 2;
+    background-color: #d8f3dc;
+}
+
+/* Responsive: Stack cards on smaller screens */
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .box-large, .box-wide, .box-medium {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+
+/*Box Color*/
+.box-gold {
+    background-color: #D9A426;
+}
+
+.box-silver {
+    background-color: #D9DEE3;
+}
+
+.box-darknavy {
+    background-color: #0D2533;
+}
+
+.box-lightnavy {
+    background-color: #1D3C4D;
+}
+
+
+
+
+
+
+
+
+

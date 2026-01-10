@@ -1,0 +1,199 @@
+body {
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto; /* This centers the container horizontally */
+}
+
+#Contact {
+    text-align: center;
+    padding: 50px 0; /* Add space at top and bottom instead of <br> tags */
+}
+
+
+/* Container to align buttons side-by-side */
+    .button-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* Base button styles */
+    .btn {
+    padding: 12px 28px;
+    font-family: 'Inter', sans-serif; /* Or your site's font */
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 4px; /* Slight roundness for a modern look */
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+/* Primary Button (Gold) */
+.btn-primary {
+    background-color: #D9A426;
+    color: #ffffff;
+    border: 2px solid #D9A426;
+}
+
+    .btn-primary:hover {
+        background-color: #b88a1e;
+        border-color: #b88a1e;
+        transform: translateY(-2px); /* Subtle lift effect */
+        box-shadow: 0 5px 15px rgba(217, 164, 38, 0.4);
+    }
+
+
+
+/* Outline Button (Transparent with Gold border) */
+.btn-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+    .btn-outline:hover {
+        border-color: #D9A426;
+        color: #D9A426;
+        transform: translateY(-2px);
+    }
+
+
+
+
+
+
+/* ... keep your top code as is ... */
+
+/* 1. FIXED SPECIAL BUTTON */
+/* We use !important here because .btn-primary is very specific */
+
+#special-button {
+    background-color: #0D2533 !important;
+    border: 2px solid #0D2533 !important;
+    color: #ffffff !important;
+}
+
+    #special-button:hover {
+        background-color: #1a3a4d !important;
+        border-color: #1a3a4d !important;
+        transform: translateY(-2px);
+    }
+
+/* 2. FIXED MEDIA QUERY (Added missing closing bracket) */
+
+
+.glass-container {
+    /* Background color with transparency (Alpha channel 0.1 to 0.3) */
+    background: rgba(255, 255, 255, 0.0);
+    /* The "Frosted Glass" effect */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* Optional: Subtle border and rounded corners to make it pop */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    /* Shadow for depth */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Ensures the image stays centered on smaller screens */
+
+
+
+
+@media (max-width: 768px) {
+    .glass-container {
+
+
+
+        /* text-align: center; */
+    }
+
+    .contact-info a {
+        color: cyan;
+        text-decoration: none;
+    }
+
+        .contact-info a:hover {
+            color: darkcyan;
+        }
+
+    #scrollTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #333;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 50%;
+        font-size: 18px;
+        transition: opacity 0.3s;
+    }
+
+        #scrollTopBtn:hover {
+            background-color: #555;
+        }
+
+    .responsive-iframe-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
+    }
+
+        .responsive-iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+}
+/* <--- THIS BRACKET WAS MISSING */
+
+/* 3. GLOBAL STYLES (Now outside the media query so they work everywhere) */
+a {
+    text-decoration: none;
+}
+
+
+.text-black {
+    color: #0D2533 !important;
+}
+
+#demo {
+    max-width: 1000px;
+    margin: 0 auto; /* Centers the carousel */
+}
+
+.carousel-item {
+    height: 650px; /* Change this to your desired height */
+}
+
+    .carousel-item img {
+        height: 500px;
+        object-fit: cover; /* This prevents the image from looking squashed */
+    }
+
+
+
+
+
+
+
+
