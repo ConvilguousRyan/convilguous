@@ -51,7 +51,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .bento-grid {
         grid-template-columns: 1fr;
     }
@@ -61,6 +61,8 @@
         grid-row: span 1;
     }
 }
+
+
 
 
 /*Box Color*/
@@ -139,23 +141,7 @@
     background-color: #d8f3dc;
 }
 
-/* Responsive: Stack cards on smaller screens */
-@media (max-width: 768px) {
-    .bento-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
-@media (max-width: 480px) {
-    .bento-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .box-large, .box-wide, .box-medium {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-}
 
 
 /*Box Color*/
