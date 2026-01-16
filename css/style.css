@@ -7,15 +7,18 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1600px;
-    margin: 0 auto; /* This centers the container horizontally */
+    max-width: 1400px;
+    margin: auto !important;
+    padding: 0 !important;
 }
+
 
 #Contact {
     text-align: center;
     padding: 50px 0; /* Add space at top and bottom instead of <br> tags */
 }
 
+/*--------------------------------------------------------------------------------------------------------*/
 
 /* Container to align buttons side-by-side */
     .button-container {
@@ -24,33 +27,65 @@ body {
     margin-top: 25px;
 }
 
+
 /* Base button styles */
-    .btn {
+.btn {
     padding: 12px 28px;
-    font-family: 'Inter', sans-serif; /* Or your site's font */
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 1px;
     text-decoration: none;
-    border-radius: 4px; /* Slight roundness for a modern look */
+    border-radius: 4px;
     transition: all 0.3s ease;
     display: inline-block;
+    /* Fix for mobile blue highlight */
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Fix for focus ring */
+   .btn:focus {
+   outline: none;
+}
+
+/* Fix for press state */
+    .btn:active {
+    transform: translateY(0);
 }
 
 /* Primary Button (Gold) */
+
+/* Sinking effect on click */
+.btn:active {
+    transform: translateY(1px) scale(0.98);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease; /* Faster transition for instant feedback */
+}
+
+/* Ensure the primary button stays gold when clicked */
+.btn-primary:active {
+    background-color: #a0781a;
+    border-color: #a0781a;
+}
+
+/* Ensure the outline button stays clean when clicked */
+.btn-outline:active {
+    border-color: #D9A426;
+    color: #D9A426;
+}
+
 .btn-primary {
     background-color: #D9A426;
     color: #ffffff;
     border: 2px solid #D9A426;
 }
 
-    .btn-primary:hover {
-        background-color: #b88a1e;
-        border-color: #b88a1e;
-        transform: translateY(-2px); /* Subtle lift effect */
-        box-shadow: 0 5px 15px rgba(217, 164, 38, 0.4);
-    }
-
+.btn-primary:hover {
+    background-color: #b88a1e;
+    border-color: #b88a1e;
+    transform: translateY(-2px); /* Subtle lift effect */
+    box-shadow: 0 5px 15px rgba(217, 164, 38, 0.4);
+}
 
 
 /* Outline Button (Transparent with Gold border) */
@@ -60,15 +95,14 @@ body {
     border: 2px solid #ffffff;
 }
 
-    .btn-outline:hover {
-        border-color: #D9A426;
-        color: #D9A426;
-        transform: translateY(-2px);
-    }
+.btn-outline:hover {
+    border-color: #D9A426;
+    color: #D9A426;
+    transform: translateY(-2px);
+}
 
 
-
-
+/*--------------------------------------------------------------------------------------------------------*/
 
 
 /* ... keep your top code as is ... */
@@ -93,7 +127,7 @@ body {
 
 .glass-container {
     /* Background color with transparency (Alpha channel 0.1 to 0.3) */
-    background: rgba(255, 255, 255, 0.0);
+    background: rgba(0, 0, 0, 0.10);
     /* The "Frosted Glass" effect */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -106,13 +140,8 @@ body {
 
 /* Ensures the image stays centered on smaller screens */
 
-
-
-
 @media (max-width: 768px) {
     .glass-container {
-
-
 
         /* text-align: center; */
     }
@@ -164,49 +193,122 @@ body {
             height: 100%;
         }
 }
-/* <--- THIS BRACKET WAS MISSING */
 
 /* 3. GLOBAL STYLES (Now outside the media query so they work everywhere) */
 a {
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 
-.text-black {
-    color: #0D2533 !important;
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+/*Carousel - prevent the "movement" or layout shifting of your carousel while it transitions*/
+
+#mainCarousel .carousel-inner {
+    min-height: 450px; /* Adjust this value based on your longest slide */
+    display: flex;
+    align-items: center; /* This keeps shorter text centered vertically */
 }
 
-#demo {
-    max-width: 1000px;
-    margin: 0 auto; /* Centers the carousel */
+#mainCarousel .carousel-item {
+    height: 400px; /* Adjust to fit your content */
 }
 
-.carousel-item {
-    height: 700px; /* Change this to your desired height */
+/*--------------------------------------------------------------------------------------------------------*/
+
+/* Split Screen Layout */
+
+/* Ensure the page takes up the full height */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-    .carousel-item img {
-        height: 700px;
-        object-fit: cover; /* This prevents the image from looking squashed */
+.split-container {
+    display: flex; /* Aligns columns side-by-side */
+    height: 80vh; /* Takes up 100% of the screen height */
+    flex-direction: column; /* Stacks image on top of text */
+}
+
+.left-column {
+    flex: 1; /* Takes up 50% of the width (adjust as needed) */
+    /*background-color: #f4f4f4;*/
+    width: 100%;
+    height: 300px; /* Fixed height for the image on mobile */
+    flex-shrink: 0; /* Prevents the image from squishing */
+}
+
+.left-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the area without stretching */
+}
+
+.right-column {
+    flex: 1;
+    overflow-y: auto; /* Keep the scrolling functionality */
+    padding: 40px;
+    /* Keep your "hide scrollbar" code here */
+    scrollbar-width: none;
+}
+
+.right-column::-webkit-scrollbar {
+        display: none;
+}
+
+
+/* Desktop View (Screens wider than 768px) */
+@media (min-width: 768px) {
+    .split-container {
+        flex-direction: row; /* Side-by-side */
+    }
+
+    .left-column {
+        flex: 1; /* Takes half width */
+        height: 100%; /* Takes full height */
+    }
+
+    .right-column {
+        flex: 1; /* Takes other half width */
+        padding: 60px; /* More breathing room on desktop */
+    }
+}
+    
+    
+/* 1. Hide scrollbar for Chrome, Safari, and newer versions of Edge */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+}
+
+.right-column::-webkit-scrollbar {
+    display: none; /* This actually hides the bar in Chrome/Safari */
+}
+
+/* 2. Hide scrollbar for Firefox */
+.right-column {
+    scrollbar-width: none;
+}
+
+/* 3. Hide scrollbar for IE and old Edge */
+.right-column {
+    -ms-overflow-style: none;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+/* Navbar Customization */
+.custom-nav {
+    background-color: #6a11cb !important; /* Use !important to override Bootstrap defaults */
+}
+
+    /* Optional: Change the color of the links on hover */
+    .custom-nav .nav-link:hover {
+        color: #ffcc00 !important;
     }
 
 
-#demo1 {
-    max-width: 1000px;
-    margin: 0 auto; /* Centers the carousel */
-}
-
-.carousel1-item {
-    height: 700px; /* Change this to your desired height */
-}
-
-    .carousel1-item img {
-        height: 700px;
-        object-fit: cover; /* This prevents the image from looking squashed */
-    }
-
-
-
+/*--------------------------------------------------------------------------------------------------------*/
 
 
 

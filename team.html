@@ -1,0 +1,1039 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Convilguous</title>
+
+    <!-- Bootstrap 5 CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/bento.css" rel="stylesheet" />
+    <link rel="icon" href="images/logo.svg" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="images/logo.jpeg">
+    <link rel="apple-touch-icon" href="images/logo.jpeg">
+    <link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+<body>
+
+    <!-- Example: Brand/Logo + Navbar Text -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #0D2533;">
+        <div class="container-fluid">
+            <!-- Brand / Logo -->
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#Home">
+                <!-- Using an image: Bootstrap will size/align it nicely in the navbar -->
+                <img src="images/logo.svg"
+                     alt="Logo"
+                     width="300"
+                     height="auto"
+                     class="rounded" />
+
+            </a>
+
+            <!-- Toggler (for small screens) -->
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <!-- Left links -->
+                <ul class="navbar-nav ms-auto mb-2 mb-sm-0 align-items-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 p-3" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 p-3" href="#Solutions">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 p-3" href="#Consulting">Consulting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 p-3" href="#Training">Training</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 p-3" href="#Team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 p-3" href="#Contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5 p-3">Login</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!-- Home -->
+
+    <section style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/bg.png'); background-size: cover; background-position: center;" class = "p-4 p-md-5" id="Home">
+
+        <div class="container-fluid" style="padding: 200px 0 0 0;">
+
+
+            <div class="row text-white align-items-center d-flex align-items-center mx-lg-5">
+
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div id="mainCarousel" class="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="8000">
+                        <!--
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="4"></button>
+            </div>-->
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active ">
+                                <div class="d-flex flex-column justify-content-center" style="min-height: 400px;">
+                                    <div>
+                                        <div>
+                                            <h1 class="display-5 fw-bold" style="color: #D9A426;">
+                                                Are you sure that backup of your data will work?
+                                            </h1>
+                                            <p class="lead mt-3">
+                                                Let us develop and implement a backup solution that protects your data from hackers, natural disasters, hardware failure, fire and water damage, and even the inevitable human error. All of this is done in such a way that no one else can access your backup data.
+                                            </p>
+                                            <div class="call-out-container">
+                                                    <h3 class="fw-bold" style="color: #D9A426;">Want to know more?</h3>
+                                                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex flex-column justify-content-center" style="min-height: 400px;">
+                                    <div>
+                                        <div>
+                                            <h1 class="display-5 fw-bold" style="color: #D9A426;">
+                                                Do you have a copy of all your data safely stored off-site?
+                                            </h1>
+                                            <p class="lead mt-3">
+                                                Our Cloud Backup solution stores a complete copy of your backup in our Luxembourg data center, far from any danger. Backups are encrypted when sent and can only be decrypted by restoring the backup.
+                                            </p>
+                                            <div class="call-out-container">
+                                                <h3 class="h4 fw-bold" style="color: #D9A426;">Want to know more?</h3>
+                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item ">
+                                <div class="d-flex flex-column justify-content-center" style="min-height: 400px;">
+                                    <div class="">
+                                        <div>
+                                            <h1 class="display-5 fw-bold" style="color: #D9A426;">
+                                                A backup of your data without any worries or follow-up from you?
+                                            </h1>
+                                            <p class="lead mt-3">
+                                                We can take care of backing up your server to quickly retrieve a deleted file or, in the event of a disaster, get all your servers up and running again in no time, all without you having to invest any time or worry.
+                                            </p>
+                                            <div class="call-out-container">
+                                                 <h3 class="h4 fw-bold" style="color: #D9A426;">Want to know more?</h3>
+                                                 <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item ">
+                                <div class="d-flex flex-column justify-content-center" style="min-height: 400px;">
+                                    <div>
+                                        <div>
+                                            <h1 class="display-5 fw-bold" style="color: #D9A426;">
+                                                No, not everything is safely stored in OneDrive or SharePoint!
+                                            </h1>
+                                            <p class="lead mt-3">
+                                                Everything you've saved in OneDrive or SharePoint can quickly disappear, leaving you with no way to retrieve it. And it certainly shouldn't be a hardware failure; someone stealing your Microsoft 365 subscription password is enough to erase or encrypt all your files. Don't hesitate to contact us so we can protect your data from all the threats lurking online.
+                                            </p>
+                                            <div class="call-out-container">
+                                                 <h3 class="h4 fw-bold" style="color: #D9A426;">Want to know more?</h3>
+                                                 <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="d-flex flex-column justify-content-center" style="min-height: 400px;">
+                                    <div>
+                                        <div>
+                                            <h1 class="display-5 fw-bold" style="color: #D9A426;">
+                                                All data stored on a Synology NAS?
+                                            </h1>
+                                            <p class="lead mt-3">
+                                                A NAS also needs a backup, because even though it offers protection against a failed hard drive, hackers, viruses, or a careless user, it lacks all of that. Let's ensure that all data is also stored off-site and can be retrieved in the event of a disaster.
+                                            </p>
+                                            <div class="call-out-container">
+                                                <h3 class="h4 fw-bold" style="color: #D9A426;">Want to know more?</h3>
+                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-center p-3">
+                    <img src="images/1.2.1 belgium team.png" class="img-fluid" style="max-width: 100%; height: auto;" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- Our Solutions -->
+
+        <section id="Solutions" style="background-color: #0D2533; color: white;">
+            <div class="container-fluid;" style="padding: 50px 0;">
+                <div class="bento-grid p-3">
+                    <div class="card card-large d-flex flex-column justify-content-center" style="background-color: whitesmoke" ;>
+                        <h1 class="display-5 fw-bold" style="color: #D9A426;">OUR SOLUTIONS</h1>
+                        <div><img src="images/boss.png" class="w-200 alt=CEO img-fluid" /></div>
+                        <div>
+                            <h3 class="fw-bold text-center" style="color: #1D3C4D;">
+                                Your trusted partner in delivering innovative technology solutions.
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="card card-small card-gold text-center">
+                        <py-2 class="text-white">DOMAIN NAMES</py-2>
+                        <a href="#Domain">
+                            <img src="images\domain.png" class="img-fluid w-50" />
+                        </a>
+                    </div>
+
+                    <div class="card card-small card-silver text-center">
+                        <py-2 class="text-white">APPLE SUPPORT</py-2>
+                        <a href="#Apple">
+                            <img src="images\apple.png" class="img-fluid w-50" />
+                        </a>
+                    </div>
+
+                    <div class="card card-square card-darknavy text-center">
+                        <py-2 class="text-white">DATA RECOVERY</py-2>
+                        <a href="#Data">
+                            <img src="images\data.png" class="img-fluid w-50" />
+                        </a>
+                    </div>
+
+                    <div class="card card-small card-lightnavy text-center">
+                        <py-2 class="text-white">SPAM FILTER</py-2>
+                        <a href="#Spam">
+                            <img src="images\spam.png" class="img-fluid w-50" />
+                        </a>
+                    </div>
+
+                    <div class="card card-small card-silver text-center">
+                        <py-2 class="text-white">HARDWARE</py-2>
+                        <a href="#Hardware">
+                            <img src="images\hardware.png" class="img-fluid w-50" />
+                        </a>
+                    </div>
+
+                    <div class="card card-small card-darknavy text-center">
+                        <py-2 class="text-white">ADVICE</py-2>
+                        <a href="#Consulting">
+                            <img src="images\advice.png" class="img-fluid w-50" />
+                        </a>
+                    </div>
+
+                    <div class="card card-small card-lightnavy text-center">
+                        <py-2 class="text-white">VIRTUAL PRIVATE SYSTEM</py-2>
+                        <a href="#Virtual">
+                            <img src="images\vps.png" class="img-fluid w-50" />
+                        </a>
+                    </div>
+
+                    <div class="card card-small card-gold text-center">
+                        <py-2 class="text-white">EMAIL SIGNATURE</py-2>
+                        <a href="#Email">
+                            <img src="images\email.png" class="img-fluid w-50" />
+                        </a>
+                    </div>
+
+                    <div class="card card-small card-lightnavy text-center">
+                        <py-2 class="text-white">SECURITY</py-2>
+                        <a href="#Security">
+                            <img src="images\security.png" class="img-fluid w-50" />
+                        </a>
+                    </div>
+
+                    <div class="card card-small card-gold text-center">
+                        <py-2 class="text-white">SOFTWARE DEVELOPMENT</py-2>
+                        <a href="#Software">
+                            <img src="images\software.png" class="img-fluid w-50" />
+                        </a>
+                    </div>
+
+                    <div class="card card-small card-silver text-center">
+                        <py-2 class="text-white">TRAINING</py-2>
+                        <a href="#Training">
+                            <img src="images\training.png" class="img-fluid w-50" />
+                        </a>
+                    </div>
+
+                    <div class="card card-small card-darknavy text-center">
+                        <py-2 class="text-white">BACKUP</py-2>
+                        <a href="#Backup">
+                            <img src="images\backup.png" class="img-fluid w-50" />
+                        </a>
+                    </div>
+
+                    <div class="card card-small card-gold text-center">
+                        <py-2 class="text-white">PROACTIVE MANAGEMENT</py-2>
+                        <a href="#Proactive">
+                            <img src="images\proactive.png" class="img-fluid w-50" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Domain Registration -->
+
+        <section id="Domain" style="background-color: whitesmoke; color: white;" class="p-4 p-md-5">
+
+            <div class="container-fluid;" padding="50px 0";>
+
+                <div class="row align-items-center justify-content-center text-black mx-lg-5">
+
+                    <div class="col-md-6 p-3">
+                        <h1 class="display-5 fw-bold" style="color: #1D3C4D;">A new product? Register a domain name now.</h1>
+                        <p class="lead mt-3">
+                            Nothing beats the right domain name, and a domain name doesn't have to be expensive. We'll help you choose the right name and have it ready to receive emails or launch a website.
+                        </p>
+                        <h3 class="h4 fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                    </div>
+                    <div class="col-md-6 text-center p-3">
+                        <img src="images/domainname.png" class="img-fluid" style="max-width: 600px; height: auto; width:500px; border-radius: 20px;" />
+                    </div>
+                </div>
+            </div>
+
+        <!-- Proactive Management -->
+
+            <div id="Proactive" class="container-fluid p-4 p-md-5">
+
+                <div class="row text-white align-items-start mx-lg-5;">
+
+
+                    <div class="col-md-4 p-2">
+                        <div class="glass-container p-4 p-md-5 text-black" style="background-color: #D9DEE3;">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D;">Having no problems is better than solving them, right?</h1>
+                            <p class="lead mt-3">
+                                Our Symbiosis monitoring agents allow us to anticipate many problems before they occur, and in the event of a failure, we can intervene before you even notice, or be ready at your door in the morning to carry out a repair you didn't know was necessary.
+                            </p>
+                            <h3 class="h4 fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 p-2">
+                        <div class="glass-container p-4 p-md-5 text-black" style="background-color: #D9DEE3;">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D;">IT costs out of control?</h1>
+                            <p class="lead mt-3">
+                                Take out one of our “All-in” contracts and know where you stand without any unpleasant surprises.
+                            </p>
+                            <h3 class="h4 fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 p-2">
+                        <div class="glass-container p-4 p-md-5 text-black" style="background-color: #D9DEE3;">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D;">Do you know how much each computer is used and by whom?</h1>
+                            <p class="lead mt-3">
+                                Our monitoring system also tells us which computers are being used most actively and by which users. This way, you know when it's best to update a server or when your remote workers are best reachable.
+                            </p>
+                            <h3 class="h4 fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- Software Development -->
+
+        <section id="Software" style="background-color: #0D2533; color: white;" class = "p-4 p-md-5;">
+
+            <div class="container-fluid" style="padding:50px 0">
+
+                <div class="row align-items-center text-white mx-lg-5">
+                    <div class="col-md-6 p-3">
+                        <h1 class="display-5 fw-bold" style="color:#D9A426;">Are you losing a lot of time due to a lack of the right software?</h1>
+                        <p class="lead mt-3">
+                            Perhaps you're already using software to manage your orders, but you're lacking effective sales tracking or control over your production process? Convilguous can help by integrating with your existing system and translating your company's specific workflows into efficient software. This can be done with software for PC, Mac, and apps for Android and iPhone. The cost of some upgrades might surprise you.
+                        </p>
+
+
+                        <h3 class="h4 fw-bold" style="color: white;">Want to know more?</h3>
+                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+
+                    </div>
+
+                    <div class="col-md-6 text-center p-3">
+                        <img src="images/softwaredev2.png" class="img-fluid w-75" style="border-radius: 20px;" />
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container-fluid" style="padding:50px 0">
+
+
+                <div class="row align-items-center text-white mx-lg-5">
+
+                    <div class="col-md-6 p-3 text-center">
+                        <img src="images/softwaredev.png" class="img-fluid w-75" style="border-radius: 20px;" />
+                    </div>
+
+                    <div class="col-md-6 p-3">
+                        <h1 class="display-5 fw-bold" style="color:#D9A426">Do you want better control over your production process?</h1>
+                        <p class="lead mt-3">
+                            We're no strangers to production environments, and neither are the needs associated with them. Take a few steps with custom software, and your productivity and visibility will skyrocket.
+                        </p>
+                        <h3 class="h4 fw-bold">Want to know more?</h3>
+                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            
+
+        </section>
+
+
+
+        <!-- Security -->
+
+        <section id="Security" style="background-color: whitesmoke; color: white; p-4 p-md-5;" class = "p-4 p-md-5;">
+
+            <div class="container-fluid text-black" style="padding:50px 0">
+
+                <div class="bento-grid mx-lg-5">
+
+                    <div class="box box-big box-silver d-flex align-items-end p-0">
+                        <div class="content-wrapper">
+                            <div class="row align-items-end">
+                                <div><img src="images/bjorn.png" class="w-200 img-fluid d-block mx-auto" style="margin-bottom: 0;" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box box-large box-gold d-flex align-items-center justify-content-center p-1">
+                        <div class="content-wrapper p-5">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D;">Are you unsure whether everything is in order in and around your IT infrastructure?</h2>
+                            <p class="lead mt-3">
+                                Eliminate your doubts with one of our security audits and keep your doubts at bay by subscribing to one of our proactive contracts, which allows us to continuously monitor everything and effectively alleviate any concerns you may have.
+                            </p>
+                            <h3 class="h4 fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                            <a href="#Portfolio" id="special-button" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                        </div>
+                    </div>
+
+
+                    <div class="box box-big box-silver d-flex align-items-center justify-content-center p-1">
+                        <div class="content-wrapper p-5">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D;">Want to keep hackers and viruses out?</h2>
+                            <p class="lead mt-3">
+                                This can easily be remedied by having the right hardware and software configured correctly to keep your so-called “surface of attack” as small as possible.
+                            </p>
+                            <h3 class="h4 fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                        </div>
+                    </div>
+
+                    <div class="box box-big box-gold d-flex align-items-center justify-content-center p-1">
+                        <div class="content-wrapper p-5">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D;">Your Microsoft 365 account was hacked?</h2>
+                            <p class="lead mt-3">
+                                This can easily be avoided in the future. Contact us so we can repair the damage and prevent it from happening again.
+                            </p>
+                            <h3 class="h4 fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                            <a href="#Portfolio" id="special-button" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                        </div>
+                    </div>
+
+                    <div class="box box-large box-silver d-flex align-items-center justify-content-center p-1">
+                        <div class="content-wrapper p-5">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D;">Unlimited internet access is dangerous and unproductive.</h2>
+                            <p class="lead mt-3">
+                                By using a properly sized firewall and analyzing your working methods, we ensure the correct configuration of that firewall, allowing you to work safely and with maximum productivity.
+                            </p>
+                            <h3 class="h4 fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                        </div>
+                    </div>
+
+                    <div class="box box-big box-gold d-flex align-items-center justify-content-center p-1">
+                        <div class="content-wrapper p-5">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D;">Google says your website is unsafe?</h2>
+                            <p class="lead mt-3">
+                                We can ensure that your website offers a secure connection, thus gaining the trust of Google and the world.
+                            </p>
+                            <h3 class="h4 fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                            <a href="#Portfolio" id="special-button" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                        </div>
+                    </div>
+
+                    <div class="box box-large box-silver d-flex align-items-center justify-content-center p-1">
+                        <div class="content-wrapper p-5">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D;">Keep someone else out of your laptop even with your password?</h2>
+                            <p class="lead mt-3">
+                                This seems impossible, but it isn't. With two-factor authentication on your Windows computer, you have to confirm on your phone that it's really you to log in.
+                            </p>
+                            <h3 class="h4 fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Hardware -->
+
+
+        <section id="Hardware" style="background-color: #0D2533; color:white">
+
+            <div class="container-fluid p-4 p-md-0;" style="padding:0px 0px">
+
+                <div class="row align-items-center text-white mx-lg-5">
+
+                    <div class="col-md-6 text-center p-3">
+                        <img src="images/hardwaredev1.png" class="img-fluid" />
+                    </div>
+
+                    <div class="col-md-6 p-3">
+                        <h1 class="display-5 fw-bold" style="color: #D9A426;">Your computers are getting on in years, but you don't know exactly what to provide?</h1>
+                        <p class="lead mt-3">
+                            We analyze your working methods and the resulting needs, after which we can provide you with the right hardware and get it operational. All for a clearly agreed-upon price.
+                        </p>
+
+
+                        <h3 class="h4 fw-bold">Want to know more?</h3>
+                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+
+        <!--Wifi -->
+
+
+            <div id="Wifi" class=container-fluid style="padding:0px 20px">
+
+                <div class="row align-items-center text-white mx-lg-5">
+
+                    <div class="col-md-6 p-3" style="padding-bottom: 0px;">
+                        <h1 class="display-5 fw-bold" style="color: #D9A426;">Is your WiFi coverage not optimal?</h1>
+                        <p class="lead mt-3">
+                            An analysis of your setup and any potential interference from your neighbors can provide us with the information we need to offer you the right solution for worry-free Wi-Fi coverage everywhere.
+                        </p>
+                        <h3 class="h4 fw-bold" style="color: #D9A426;">Want to know more?</h3>
+                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                    </div>
+
+                    <div class="col-md-6 p-0 align-items-end">
+                        <img src="images/yameen.png" class="img-fluid d-block mx-auto" style="margin-bottom: 0;" />
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--Advice -->
+
+        <section id="Consulting" style="background-color: whitesmoke; padding: 40px; color: white;" class = "p-4 p-md-5;">
+
+            <div class=container-fluid style="padding:50px 0;">
+
+                <div class="row text-white align-items-start mx-lg-5">
+
+
+                    <div class="col-md-4 p-2">
+                        <div class="glass-container p-4 p-md-5" style="background-color: #D9A426;">
+                            <h1 class="display-5 fw-bold">You've taken over an existing environment, what now?</h1>
+                            <p class="lead mt-3">
+                                Call on one of our experts and we'll guide you to where you want to be in the most cost-effective and efficient way.
+                            </p>
+                            <h3 class="h4 fw-bold">Want to know more?</h3>
+                            <a href="#Portfolio" id="special-button" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 text-center p-2">
+                        <div class="glass-container p-4 p-md-5" style="background-color: whitesmoke" ;>
+                            <img src="images\consultation-advisering.png" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 p-2">
+                        <div class="glass-container p-4 p-md-5 text-black" style="background-color: #D9DEE3;">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D;">Move to the cloud or install everything at the office?</h1>
+                            <p class="lead mt-3">
+                                Cloud, cloud, cloud... everyone's been talking about it these days. But is this the right solution for you? It might be, but perhaps it's too early, or could a solution for your company be found somewhere between the two? At Convilguous, we're not tied to either solution because we're experts in all these markets. Schedule an appointment with one of our experts to find an unbiased solution for your specific environment.
+                            </p>
+                            <h3 class="h4 fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+
+        </section>
+
+
+        <!--Backup -->
+
+
+        <section id="Backup" style="background-color: #0D2533; color: white;" class="p-4 p-md-5;">
+
+            <div class=container-fluid style="padding: 50px 0;">
+
+                <div class="split-container mx-lg-5">
+                    <div class="left-column text-center">
+                        <img src="images/backupyameen.png" alt="Description of image" style="width: auto">
+                    </div>
+                    
+                    <div class="right-column text-black">
+
+                        <div class="glass-container p-4 p-md-5" style="background-color: #D9DEE3;">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D;">
+                                Are you sure that backup of your data will work?
+                            </h1>
+                            <p class="lead mt-3">
+                                Let us develop and implement a backup solution that protects your data from hackers, natural disasters, hardware failure, fire and water damage, and even the inevitable human error. All of this is done in such a way that no one else can access your backup data.
+                            </p>
+                            <div class="call-out-container">
+                                <h3 class="fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="glass-container p-4 p-md-5" style="background-color: #D9A426;">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D; ">
+                                Do you have a copy of all your data safely stored off-site?
+                            </h1>
+                            <p class="lead mt-3">
+                                Our Cloud Backup solution stores a complete copy of your backup in our Luxembourg data center, far from any danger. Backups are encrypted when sent and can only be decrypted by restoring the backup.
+                            </p>
+                            <div class="call-out-container">
+                                <h3 class="fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                <a href="#Portfolio" id="special-button" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="glass-container p-4 p-md-5" style="background-color: #D9DEE3;">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D;">
+                                A backup of your data without any worries or follow-up from you?
+                            </h1>
+                            <p class="lead mt-3">
+                                We can take care of backing up your server to quickly retrieve a deleted file or, in the event of a disaster, get all your servers up and running again in no time, all without you having to invest any time or worry.
+                            </p>
+                            <div class="call-out-container">
+                                <h3 class="fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="glass-container p-4 p-md-5" style="background-color: #D9A426;">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D;">
+                                Are you sure that backup of your data will work?
+                            </h1>
+                            <p class="lead mt-3">
+                                Let us develop and implement a backup solution that protects your data from hackers, natural disasters, hardware failure, fire and water damage, and even the inevitable human error. All of this is done in such a way that no one else can access your backup data.
+                            </p>
+                            <div class="call-out-container">
+                                <h3 class="fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                <a href="#Portfolio" id="special-button" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                            </div>
+                        </div>
+
+                    </div>
+                        
+            </div>
+
+        </section>
+
+
+
+        <!--Virtual Private Systems -->
+
+        <section id="Virtual" style="background-color: whitesmoke; padding: 40px; color: white;" class = "p-4 p-md-5;">
+
+            <div class=container-fluid style="padding:50px">
+
+                <div class="row align-items-start mx-lg-5 text-black">
+
+
+                    <div class="col-md-4 p-2">
+                        <div class="glass-container p-4 p-md-5" style="background-color: #D9DEE3;">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D;">All the benefits of your own server without your own server?</h1>
+                            <p class="lead mt-3">
+                                No need for powerful laptops and an expensive server on-site when we provide a virtual network in our datacenter. Just like with your own server and laptops on-site, you'll work in your own closed system, but you'll only need basic laptops. Contact us, and we can advise you on the feasibility and, of course, the cost of such a setup.
+                            </p>
+                            <h3 class="h4 fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 p-2">
+                        <div class="glass-container p-4 p-md-5" style="background-color: #D9DEE3;">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D;">Do you want to be able to work as an accountant from anywhere?</h1>
+                            <p class="lead mt-3">
+                                This is perfectly possible with our cloud-based network; we provide a secure network where you can work from anywhere in the world as if you were in the office.
+                            </p>
+                            <h3 class="h4 fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 p-2">
+                        <div class="glass-container p-4 p-md-5 pb-0 pb-md-0" style="background-color: #D9A426;">
+                            <img src="images\liamvirtual.png" class="w-100 img-fluid w-75" />
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+
+        </section>
+
+
+        <!--Data Recovery -->
+
+
+        <section id="Data" style="background-color: #0D2533; color: white;" class = "p-4 p-md-5;">
+
+            <div class=container-fluid style="padding:50px 0">
+
+
+                <div class="row align-items-center text-white mx-lg-5">
+
+                    <div class="col-md-6 text-center p-3">
+                        <img src="images\hardware-harddrive-storage.png" class="img-fluid w-75" style="border-radius: 20px;" />
+                    </div>
+
+
+                    <div class="col-md-6 p-3">
+                        <h1 class="display-5 fw-bold" style="color: #D9A426;">Your external hard drive died and your photos are gone?</h1>
+                        <p class="lead mt-3">
+                            Don't worry. Just send us the hard drive and we'll get your memories back. It's often not too late.
+                        </p>
+
+
+                        <h3 class="h4 fw-bold">Want to know more?</h3>
+                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+
+
+
+
+        <!--Email Signature -->
+
+
+            <div id="Email" class=container-fluid>
+
+                <div class="row align-items-center text-white mx-lg-5">
+                    <div class="col-md-6 p-3">
+                        <h1 class="display-5 fw-bold" style="color: #D9A426;">Send all your employees' emails with a signature that you determine?</h1>
+                        <p class="lead mt-3">
+                            Whether it's the right new logo, the right phone numbers, or a monthly promotion, Convilguous can help you get it right and keep it that way with a centrally managed signature policy.
+                        </p>
+
+
+                        <h3 class="h4 fw-bold">Want to know more?</h3>
+                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+
+                    </div>
+
+                    <div class="col-md-6 text-center p-3">
+                        <img src="images\emailsignature.png" class="img-fluid w-75" />
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+
+        </section>
+
+
+        <!--Spam Filter -->
+
+
+        <section id="Spam" style="background-color: #D9DEE3; color: white;" class = "p-4 p-md-5;">
+
+            <div class=container-fluid style="padding:20px 0 0 0">
+
+
+                <div class="row text-white align-items-center mx-lg-5">
+
+                    <div class="col-md-6 text-center p-3">
+                        <img src="images\spamfilter.png" class="img-fluid w-50" />
+                    </div>
+
+
+                    <div class="col-md-6 p-3 text-black p-3">
+                        <h1 class="display-5 fw-bold" style="color: #1D3C4D;">Want to stop spam emails but still maintain an overview?</h1>
+                        <p class="lead mt-3">
+                            The spam filter stores all emails for 45 days, so if you miss an email, you can easily search with keywords through all the emails you have or have not received.
+                        </p>
+
+
+                        <h3 class="h4 fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            </div>
+
+
+            <!--Apple -->
+
+            <div id="Apple" class=container-fluid style="padding:50px 0 0 0">
+
+                <div class="row text-white align-items-center mx-lg-5">
+
+                    <div class="col-md-6 p-3 text-black">
+                        <h1 class="display-5 fw-bold" style="color: #1D3C4D;">You work with Apple computers at work?</h1>
+                        <p class="lead mt-3">
+                            Have you decided to work with Mac, but finding the right support is proving difficult? We can offer you the right solutions and support to integrate it into a corporate network or in the cloud with Microsoft 365.
+                        </p>
+
+
+                        <h3 class="h4 fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+
+                    </div>
+
+                    <div class="col-md-6 text-center p-3">
+                        <img src="images\appleyameen.png" class="img-fluid w-75" style="border-radius: 20px;" />
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+
+        </section>
+
+
+        <!--Training -->
+
+
+        <section id="Training" style="background-color: #0D2533; color: white;" class = "p-4 p-md-5;">
+
+            <div class=container-fluid style="padding:50px 0">
+
+                <div class="row text-white align-items-start mx-lg-5">
+
+
+                    <div class="col-md-4 text-black p-2">
+                        <div class="glass-container p-4 p-md-5" style="background-color: #D9A426; ">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D;">Having no problems is better than solving them, right?</h1>
+                            <p class="lead mt-3">
+                                Our Symbiosis monitoring agents allow us to anticipate many problems before they occur, and in the event of a failure, we can intervene before you even notice, or be ready at your door in the morning to carry out a repair you didn't know was necessary.
+                            </p>
+                            <h3 class="h4 fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                            <a href="#Portfolio" id="special-button" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                            <br><br>
+                            <img src="images\microsoft-360-solution.png" class="img-fluid" style="border-radius: 20px;" />
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 text-black p-2">
+                        <div class="glass-container p-4 p-md-5" style="background-color: #D9DEE3; ">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D;">IT costs out of control?</h1>
+                            <p class="lead mt-3">
+                                Take out one of our “All-in” contracts and know where you stand without any unpleasant surprises.
+                            </p>
+                            <h3 class="h4 fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                            <br><br>
+                            <img src="images\cloudauth.png" class="img-fluid" style="border-radius: 20px;" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 text-black p-2">
+                        <div class="glass-container p-4 p-md-5" style="background-color: #D9DEE3; ">
+                            <h1 class="display-5 fw-bold" style="color: #1D3C4D;">Do you know how much each computer is used and by whom?</h1>
+                            <p class="lead mt-3">
+                                Our monitoring system also tells us which computers are being used most actively and by which users. This way, you know when it's best to update a server or when your remote workers are best reachable.
+                            </p>
+                            <h3 class="h4 fw-bold" style="color: #1D3C4D;">Want to know more?</h3>
+                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                            <br><br>
+                            <img src="images\clouddoc.png" class="img-fluid" style="border-radius: 20px;" />
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+
+        <section id="Contact" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/contactbg.png'); background-size: cover; background-position: center;" class = p-5; p-md-5>
+
+            <div class=container-fluid style="padding:50px 0">
+
+                <div class="row text-white align-items-center mx-lg-5">
+
+                    <div class="col-md-6 text-center p-3">
+                        <h1 class="display-5 fw-bold" style="color: #D9A426;">Our parking spaces</h1>
+                        <p class="lead mt-3">
+                            Arrive stress-free: Reserved seats for visitors and customers.
+                        </p>
+                        <img src="images\carparking.png" class="img-fluid w-75" />
+                    </div>
+
+                    <div class="col-md-6 text-center p-3">
+                        <video width="75%" height="auto" autoplay muted loop playsinline style="border-radius: 20px;">
+                            <source src="video\ConvilguousParkingVideo.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <button id="scrollTopBtn" title="Go to top">&#8593;</button>
+
+        </section>
+
+
+        <!-- Footer -->
+
+
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #0D2533;">
+            <div class="container-fluid justify-content-center">
+
+                <span class="navbar-text">
+
+                    <div class="text-white text-center">
+                        <h1 class="display-5 fw-bold">Follow us for your own safety!</h1>
+                        <img src="images/facebook.svg" style="width: 50px;" alt="Facebook" />
+                        <img src="images/instagram.svg" style="width: 50px;" alt="Instagram" />
+                        <img src="images/linkedin.svg" style="width: 50px;" alt="LinkedIn" />
+                    </div>
+                    <br>
+
+                    <div class="text-center">
+                        &copy; 2026 - Convilguous - Privacy
+                    </div>
+
+                </span>
+
+
+
+                <script>
+                    // Paste the JavaScript code here
+                    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+                    // Show the button when the user scrolls down 200px from the top
+                    window.onscroll = function () {
+                        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                            scrollTopBtn.style.display = "block";
+                        } else {
+                            scrollTopBtn.style.display = "none";
+                        }
+                    };
+
+                    // When the user clicks the button, scroll to the top
+                    scrollTopBtn.addEventListener("click", () => {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: "smooth" // This creates the smooth gliding effect
+                        });
+                    });
+                </script>
+</body>
+</html>
+
+
+
+
+<!-- Bootstrap 5 JS (CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+
+
