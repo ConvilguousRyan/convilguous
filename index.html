@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap 5 Navbar Brand + Text Example</title>
+    <title>Convilguous 2.0</title>
 
     <!-- Bootstrap 5 CSS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
           rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="images/Logo-small.svg">
 </head>
 
 <body class="bg-light">
@@ -25,7 +26,7 @@
                      width="32"
                      height="32"
                      class="rounded" />
-                <span>CONVILGUOS</span>
+                <span>CONVILGUOUS</span>
             </a>
 
             <!-- Toggler (for small screens) -->
@@ -43,22 +44,22 @@
                 <!-- Left links -->
                 <ul class="navbar-nav me-auto mb-2 mb-sm-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Solution</a>
+                        <a class="nav-link" href="#solution">Solution</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Consulting</a>
+                        <a class="nav-link" href="#consulting">Consulting</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Training</a>
+                        <a class="nav-link" href="#training">Training</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Team</a>
+                        <a class="nav-link" href="#team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
                 </ul>
 
@@ -72,6 +73,7 @@
 
 
     <!-- Home -->
+    <div id="home">
 
     <section style="background-color:">
 
@@ -93,920 +95,1025 @@
 
 
     <!-- Solution -->
+    <div id="solution">
 
     <section style="background-color:">
 
-        <div class="container" style="padding-top: 50px">
+        <div class="container mt-5">
             <div>
                 <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Our Solutions</h1>
                 <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
             </div>
 
-            <div class="services-grid mt-5" style="border-radius: 10px; background-color: #D9A426;">
+            <div class="services-grid" style="border-radius: 10px; background-color: #D9A426;">
 
                 <div class="card">
                     <div class="icon-box p-1" style="background-color: #1D3C4D">
                         <img src="images/domain-name-domains-Domeinnamen.svg" />
                     </div>
-                    <h3>Domain Names</h3>
-                    <p>Register and manage the perfect domain name for your business with full email support.</p>
+                    <a class="nav-link" href="#domain">
+                        <h3 style="color: #1D3C4D;">Domain Names</h3>
+                        <p>Register and manage the perfect domain name for your business with full email support.</p>
+                    </a>
                 </div>
-
+                
                 <div class="card">
                     <div class="icon-box p-2" style="background-color: #1D3C4D">
                         <img src="images/spamfilter-spam-filter-bad-email.svg" />
                     </div>
-                    <h3>Spam Filter</h3>
-                    <p>Advanced span filtering with easy search to keep all your emails safe.</p>
+                    <a class="nav-link" href="#spam">
+                        <h3 style="color: #1D3C4D;">Spam Filter</h3>
+                        <p>Advanced span filtering with easy search to keep all your emails safe.</p>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <div class="icon-box p-2" style="background-color: #1D3C4D">
-                        <img src="images/hardware.svg" />
+                    <div class="card">
+                        <div class="icon-box p-1" style="background-color: #1D3C4D">
+                            <img src="images/hardware.svg" />
+                        </div>
+                        <a class="nav-link" href="#hardware">
+                            <h3 style="color: #1D3C4D;">Hardware</h3>
+                            <p>Analysis of your needs and delivery of turnkey hardware for optimal perfirmance.</p>
+                        </a>
                     </div>
-                    <h3>Hardware</h3>
-                    <p>Analysis of your needs and delivery of turnkey hardware for optimal perfirmance.</p>
-                </div>
 
                 <div class="card">
-                    <div class="icon-box p-2" style="background-color: #1D3C4D">
+                    <div class="icon-box p-1" style="background-color: #1D3C4D">
                         <img src="images/security-cybersecurity-Beveiliging.svg" />
                     </div>
-                    <h3>Security</h3>
-                    <p>Full security audits and implementation of two-factor authentication.</p>
+                    <a class="nav-link" href="#security">
+                        <h3 style="color: #1D3C4D;">Security</h3>
+                        <p>Full security audits and implementation of two-factor authentication.</p>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <div class="icon-box p-2" style="background-color: #1D3C4D">
-                        <img src="images/proactive-management-Proactief-beheer.svg" />
-                    </div>
-                    <h3>Proactive Management</h3>
+            <div class="card">
+                <div class="icon-box p-1" style="background-color: #1D3C4D">
+                    <img src="images/proactive-management-Proactief-beheer.svg" />
+                </div>
+                <a class="nav-link" href="#proactive">
+                    <h3 style="color: #1D3C4D;">Proactive Management</h3>
                     <p>Identify and solve problems before they impact your business.</p>
-                </div>
+                </a>
+            </div>
 
-                <div class="card">
-                    <div class="icon-box p-2" style="background-color: #1D3C4D">
-                        <img src="images/apple-support-apple-ondersteuning.svg" />
-                    </div>
-                    <h3>Apple Support</h3>
+            <div class="card">
+                <div class="icon-box p-1" style="background-color: #1D3C4D">
+                    <img src="images/apple-support-apple-ondersteuning.svg" />
+                </div>
+                <a class="nav-link" href="#apple">
+                    <h3 style="color: #1D3C4D;">Apple Support</h3>
                     <p>Advanced spam filtering with easy search to keep all your emails safe.</p>
-                </div>
+                </a>
+            </div>
 
-                <div class="card">
-                    <div class="icon-box p-2" style="background-color: #1D3C4D">
-                        <img src="images/consultation-advice-Advisering.svg" />
-                    </div>
-                    <h3>Advice</h3>
+            <div class="card">
+                <div class="icon-box p-1" style="background-color: #1D3C4D">
+                    <img src="images/consultation-advice-Advisering.svg" />
+                </div>
+                <a class="nav-link" href="#consulting">
+                    <h3 style="color: #1D3C4D;">Advice</h3>
                     <p>Expert advice on cloud transition, IT infastructure and security audits.</p>
-                </div>
+                </a>
+            </div>
 
                 <div class="card">
-                    <div class="icon-box p-2" style="background-color: #1D3C4D">
+                    <div class="icon-box p-1" style="background-color: #1D3C4D">
                         <img src="images/software-development-Software-ontwikkeling.svg" />
                     </div>
-                    <h3>Software Development</h3>
-                    <p>Custom software for PC, Mac, Android and iPhone to optimize your workflow.</p>
+                    <a class="nav-link" href="#software">
+                        <h3 style="color: #1D3C4D;">Software Development</h3>
+                        <p>Custom software for PC, Mac, Android and iPhone to optimize your workflow.</p>
+                    </a>
                 </div>
-
-                <div class="card">
-                    <div class="icon-box p-2" style="background-color: #1D3C4D">
-                        <img src="images/data-recovery.svg" />
-                    </div>
-                    <h3>Data Recovery</h3>
-                    <p>Professional data recovery services for all types of storage media.</p>
-                </div>
-
-                <div class="card">
-                    <div class="icon-box p-2" style="background-color: #1D3C4D">
-                        <img src="images/virtual-private-system-vps-Virtueel-Prive-Systeem.svg" />
-                    </div>
-                    <h3>Virtual Private System</h3>
-                    <p>VPS solutions in our Luxembourg data center for maximum reliability.</p>
-                </div>
-
-                <div class="card">
-                    <div class="icon-box p-2" style="background-color: #1D3C4D">
-                        <img src="images/training-courses-Opleidingen.svg" />
-                    </div>
-                    <h3>Training</h3>
-                    <p>Microsoft 365 training and cybersecurity courses for your team.</p>
-                </div>
-
-                <div class="card">
-                    <div class="icon-box p-2" style="background-color: #1D3C4D">
-                        <img src="images/Email-Handtekeningen-email-signature.svg" />
-                    </div>
-                    <h3>Email Signature</h3>
-                    <p>Centrally managed email signatures for consistent business communications.</p>
-                </div>
-
-                <div class="card">
-                    <div class="icon-box p-2" style="background-color: #1D3C4D">
-                        <img src="images/Backup-cloud.svg" />
-                    </div>
-                    <h3>Backup</h3>
-                    <p>Encrypted cloud backup solutions in our Luxembourg data center.</p>
-                </div>
-
-            </div>
-            <br><br>
-        </div>
-
-
-    </section>
-
-    <!-- Domain Registration -->
-
-    <section style="background-color:">
-
-        <div class="container" style="padding-top: 50px">
-            <div>
-             
-                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Domain Names</h1>
-                <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
-            </div>
-
-            <div class="container mt-5">
-                <div class="row align-items-center card">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 text-start">
-                            <div class="icon-box p-1" style="background-color: #1D3C4D">
-                            <img src="images/domain-name-domains-Domeinnamen.svg" />
-                            </div>
-                            <h2 fw-bold" style="color: #1D3C4D;">Are you losing a lot of time due to a lack of the right software?</h2>
-                            <p class="lead mt-3" style="color: black;">
-                                Perhaps you're already using software to manage your orders, but you're lacking effective sales tracking or control over your production process?
-                                Convilguous can help by integrating with your existing system and translating your company's specific workflows into efficient software.
-                                This can be done with software for PC, Mac, and apps for Android and iPhone. The cost of some upgrades might surprise you.
-                            </p>
-                            <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <img src="images/domainname.png" class="w-75 p-3" />
-                        </div>
-
-                    </div>
-                </div>
-                <br><br>
-
-    </section>
-
-
-    <!-- Proactive Management -->
-
-    <section style="background-color:">
-
-        <div class="container" style="padding-top: 50px">
-            <div>
-                <h1 class="display-5 fw-bold text-center" style="color: #D9A426">Proactive Management</h1>
-                <p class="lead mt-3 text-center" style="color: #D9DEE3">Your trusted partner in delivering innovative technology solutions.</h3>
-            </div>
-
-            <div class="container mt-5">
-
-                <div class="services-grid mt-5" style="border-radius: 10px; background-color: #D9A426;">
 
                     <div class="card">
-                        <div class="icon-box p-1" style="background-color: #1D3C4D">
-                            <img src="images/proactive-management-Proactief-beheer.svg" />
-                        </div>
-                        <h2>Having no problems is better than solving them, right?</h2>
-                        <p>
-                            Our Symbiosis monitoring agents allow us to anticipate many problems before they occur, and in the event of a failure,
-                            we can intervene before you even notice, or be ready at your door in the morning to carry out a repair you didn't know was necessary.
-                        </p>
-                        <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                    </div>
-
-                    <div class="card">
-                        <div class="icon-box p-2" style="background-color: #1D3C4D">
-                            <img src="images/proactive-management-Proactief-beheer.svg" />
-                        </div>
-                        <h2>IT costs out of control?</h2>
-                        <p>Take out one of our “All-in” contracts and know where you stand without any unpleasant surprises.</p>
-                        <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                    </div>
-
-                    <div class="card">
-                        <div class="icon-box p-2" style="background-color: #1D3C4D">
-                            <img src="images/proactive-management-Proactief-beheer.svg" />
-                        </div>
-                        <h2>Do you know how much each computer is used and by whom?</h2>
-                        <p>
-                            Our monitoring system also tells us which computers are being used most actively and by which users.
-                            This way, you know when it's best to update a server or when your remote workers are best reachable.
-                        </p>
-                        <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                    </div>
-
-                </div>
-                <br><br>
-            </div>
-
-    </section>
-
-
-    <!-- Software Development -->
-
-    <section style="background-color:">
-        <div class="container" style="padding-top: 50px">
-            <div>
-                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Software Development</h1>
-                <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
-            </div>
-
-
-            <div class="row align-items-center card mt-5">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-start">
-                        <div class="icon-box p-1" style="background-color: #1D3C4D">
-                            <img src="images/software-development-Software-ontwikkeling.svg" />
-                        </div>
-                        <h2 fw-bold" style="color: #1D3C4D;">Are you losing a lot of time due to a lack of the right software?</h2>
-                        <p class="lead mt-3" style="color: black;">
-                            Perhaps you're already using software to manage your orders, but you're lacking effective sales tracking or control over your production process?
-                            Convilguous can help by integrating with your existing system and translating your company's specific workflows into efficient software.
-                            This can be done with software for PC, Mac, and apps for Android and iPhone. The cost of some upgrades might surprise you.
-                        </p>
-                        <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <img src="images/software-development.jpg" class="w-75 p-3" />
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section>
-
-        <div class="container" style="padding-top: 50px">
-            <div class="row align-items-center card">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-start">
-                        <div class="icon-box p-1" style="background-color: #1D3C4D">
-                            <img src="images/software-development-Software-ontwikkeling.svg" />
-                        </div>
-                        <h2 fw-bold" style="color: #1D3C4D;">Are you losing a lot of time due to a lack of the right software?</h2>
-                        <p class="lead mt-3" style="color: black;">
-                            Perhaps you're already using software to manage your orders, but you're lacking effective sales tracking or control over your production process?
-                            Convilguous can help by integrating with your existing system and translating your company's specific workflows into efficient software.
-                            This can be done with software for PC, Mac, and apps for Android and iPhone. The cost of some upgrades might surprise you.
-                        </p>
-                        <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <img src="images/software-development-mobile-application-desktop-application-web-development.png" class="w-75 p-3" />
-                    </div>
-                </div>
-            </div>
-
-            <br><br>
-
-    </section>
-
-    <!-- Security -->
-
-    <section style="background-color:">
-
-        <div class="container" style="padding-top: 50px">
-            <div>
-                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Security</h1>
-                <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
-            </div>
-
-            <div class="services-grid mt-5" style="border-radius: 10px; background-color: #D9A426;">
-
-                <div class="card">
-                    <div class="icon-box p-1" style="background-color: #1D3C4D">
-                        <img src="images/security-cybersecurity-Beveiliging.svg" />
-                    </div>
-                    <h2>Are you unsure whether everything is in order in and around your IT infrastructure?</h2>
-                    <p>
-                        Eliminate your doubts with one of our security audits and keep your doubts at bay by subscribing to one of our proactive contracts,
-                        which allows us to continuously monitor everything and effectively alleviate any concerns you may have.
-                    </p>
-                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                </div>
-
-                <div class="card">
-                    <div class="icon-box p-1" style="background-color: #1D3C4D">
-                        <img src="images/security-cybersecurity-Beveiliging.svg" />
-                    </div>
-                    <h2>Want to keep hackers and viruses out?</h2>
-                    <p>
-                        This can easily be remedied by having the right hardware and software configured correctly to keep your so-called “surface of attack” as small as possible.
-                    </p>
-                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                </div>
-
-                <div class="card">
-                    <div class="icon-box p-1" style="background-color: #1D3C4D">
-                        <img src="images/security-cybersecurity-Beveiliging.svg" />
-                    </div>
-                    <h2>Your Microsoft 365 account was hacked?</h2>
-                    <p>
-                        This can easily be avoided in the future. Contact us so we can repair the damage and prevent it from happening again.
-                    </p>
-                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                </div>
-
-                <div class="card">
-                    <div class="icon-box p-1" style="background-color: #1D3C4D">
-                        <img src="images/security-cybersecurity-Beveiliging.svg" />
-                    </div>
-                    <h2>Unlimited internet access is dangerous and unproductive.</h2>
-                    <p>
-                        By using a properly sized firewall and analyzing your working methods, we ensure the correct configuration of that firewall, allowing you to work safely and with maximum productivity.
-                    </p>
-                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                </div>
-
-                <div class="card">
-                    <div class="icon-box p-1" style="background-color: #1D3C4D">
-                        <img src="images/security-cybersecurity-Beveiliging.svg" />
-                    </div>
-                    <h2>Google says your website is unsafe?</h2>
-                    <p>
-                        We can ensure that your website offers a secure connection, thus gaining the trust of Google and the world.
-                    </p>
-                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                </div>
-
-                <div class="card">
-                    <div class="icon-box p-1" style="background-color: #1D3C4D">
-                        <img src="images/security-cybersecurity-Beveiliging.svg" />
-                    </div>
-                    <h2>Keep someone else out of your laptop even with your password?</h2>
-                    <p>
-                        This seems impossible, but it isn't. With two-factor authentication on your Windows computer, you have to confirm on your phone that it's really you to log in.
-                    </p>
-                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                </div>
-
-            </div>
-            <br><br>
-        </div>
-
-    </section>
-
-    <!-- Hardware -->
-
-    <section style="background-color:">
-
-        <div class="container" style="padding-top: 50px">
-            <div>
-                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Hardware</h1>
-                <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
-            </div>
-
-
-            <div class="row align-items-center card mt-5">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-start">
-                        <div class="icon-box p-1" style="background-color: #1D3C4D">
-                            <img src="images/hardware.svg" />
-                        </div>
-                        <h2 fw-bold" style="color: #1D3C4D;">Your computers are getting on in years, but you don't know exactly what to provide?</h2>
-                        <p class="lead mt-3" style="color: black;">
-                            We analyze your working methods and the resulting needs, after which we can provide you with the right hardware and get it ready for use. All of this for a clearly agreed-upon price.
-                        </p>
-                        <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <img src="images/hardware-development-hardware-repair.png" class="w-75 p-3" />
-                    </div>
-                </div>
-            </div>
-
-    </section>
-
-    <section style="background-color:">
-
-        <div class="container" style="padding-top: 50px">
-            <div class="row align-items-center card">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-start">
-                        <div class="icon-box p-1" style="background-color: #1D3C4D">
-                            <img src="images/hardware.svg" />
-                        </div>
-                        <h2 fw-bold" style="color: #1D3C4D;">Is your WiFi coverage not optimal?</h2>
-                        <p class="lead mt-3" style="color: black;">
-                            An analysis of your setup and any potential interference from your neighbors can provide us with the information we need to offer you the right solution for worry-free Wi-Fi coverage everywhere.
-                        </p>
-                        <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <img src="images/wifi-internet-problem-modem-repair-internet-connection-secure-connection.png" class="w-75 p-3" />
-                    </div>
-                </div>
-            </div>
-
-    </section>
-
-
-    <!-- Advice / Consultancy -->
-
-    <section style="background-color:">
-
-        <div class="container" style="padding-top: 50px">
-            <div>
-                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Advice/Consulting</h1>
-                <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
-            </div>
-
-
-            <div class="services-grid mt-5" style="border-radius: 10px; background-color: #D9A426;">
-
-                <div class="card">
-                    <div class="icon-box p-1" style="background-color: #1D3C4D">
-                        <img src="images/consultation-advice-Advisering.svg" />
-                    </div>
-                    <h2>You've taken over an existing environment, what now?</h2>
-                    <p>
-                        Call on one of our experts and we'll guide you to where you want to be in the most cost-effective and efficient way.
-                    </p>
-                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                </div>
-
-                <div class="card">
-                    <div class="icon-box p-1" style="background-color: #1D3C4D">
-                        <img src="images/consultation-advice-Advisering.svg" />
-                    </div>
-                    <h2>Move to the cloud or install everything at the office?</h2>
-                    <p>
-                        Cloud, cloud, cloud... everyone's been talking about it these days. But is this the right solution for you? It might be,
-                        but perhaps it's too early, or could a solution for your company be found somewhere between the two? At Convilguous,
-                        we're not tied to either solution because we're experts in all these markets.
-                        Schedule an appointment with one of our experts to find an unbiased solution for your specific environment.
-                    </p>
-                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                </div>
-
-                <div class="card d-flex align-items-center justify-content-center">
-                    <img src="images/consultation-advisering.png" class="w-75" />
-                </div>
-            </div>
-            <br><br>
-        </div>
-
-    </section>
-
-
-    <!-- Backup -->
-
-    <section style="background-color:">
-
-        <div class="container" style="padding-top: 50px">
-            <div>
-                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Backup</h1>
-                <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
-            </div>
-
-            <div class="services-grid mt-5" style="border-radius: 10px; background-color: #D9A426;">
-
-                <div class="card">
-                    <div class="icon-box p-1" style="background-color: #1D3C4D">
-                        <img src="images/Backup-cloud.svg" />
-                    </div>
-                    <h2>Do you have a copy of all your data safely stored off-site?</h2>
-                    <p>
-                        Our Cloud Backup solution stores a complete copy of your backup in our Luxembourg data center, far from any danger. Backups are encrypted when sent and can only be decrypted by restoring the backup.
-                    </p>
-                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                </div>
-
-                <div class="card">
-                    <div class="icon-box p-1" style="background-color: #1D3C4D">
-                        <img src="images/Backup-cloud.svg" />
-                    </div>
-                    <h2>A backup of your data without any worries or follow-up from you?</h2>
-                    <p>
-                        We can take care of backing up your server to quickly retrieve a deleted file or, in the event of a disaster, get all your servers up and running again in no time, all without you having to invest any time or worry.
-                    </p>
-                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                </div>
-
-                <div class="card">
-                    <div class="icon-box p-1" style="background-color: #1D3C4D">
-                        <img src="images/Backup-cloud.svg" />
-                    </div>
-                    <h2>No, not everything is safely stored in OneDrive or SharePoint!</h2>
-                    <p>
-                        Everything you've saved in OneDrive or SharePoint can quickly disappear, leaving you with no way to retrieve it. And it certainly shouldn't be a hardware failure;
-                        someone stealing your Microsoft 365 subscription password is enough to erase or encrypt all your files. Don't hesitate to contact us so we can protect your data from all the threats lurking online.
-                    </p>
-                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                </div>
-
-                <div class="card">
-                    <div class="icon-box p-1" style="background-color: #1D3C4D">
-                        <img src="images/Backup-cloud.svg" />
-                    </div>
-                    <h2>Google says your website is unsafe?</h2>
-                    <p>
-                        We can ensure that your website offers a secure connection, thus gaining the trust of Google and the world.
-                    </p>
-                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                </div>
-
-                <div class="card">
-                    <div class="icon-box p-1" style="background-color: #1D3C4D">
-                        <img src="images/Backup-cloud.svg" />
-                    </div>
-                    <h2>All data stored on a Synology NAS?</h2>
-                    <p>
-                        A NAS also needs a backup, because even though it offers protection against a failed hard drive, hackers, viruses, or a careless user,
-                        it lacks all of that. Let's ensure that all data is also stored off-site and can be retrieved in the event of a disaster.
-                    </p>
-                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                </div>
-
-            </div>
-            <br><br>
-        </div>
-
-    </section>
-
-    <!-- Virtual Private System -->
-
-
-    <section style="background-color:">
-
-        <div class="container mt-5">
-
-            <div>
-                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Virtual Private System</h1>
-                <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
-            </div>
-
-            <div class="services-grid mt-5" style="border-radius: 10px; background-color: #D9A426;">
-
-                <div class="card">
-                    <div class="icon-box p-1" style="background-color: #1D3C4D">
-                        <img src="images/virtual-private-system-vps-Virtueel-Prive-Systeem.svg" />
-                    </div>
-                    <h2>All the benefits of your own server without your own server?</h2>
-                    <p>
-                        No need for powerful laptops and an expensive server on-site when we provide a virtual network in our datacenter.
-                        Just like with your own server and laptops on-site, you'll work in your own closed system, but you'll only need basic laptops.
-                        Contact us, and we can advise you on the feasibility and, of course, the cost of such a setup.
-                    </p>
-                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                </div>
-
-                <div class="card">
-                    <div class="icon-box p-1" style="background-color: #1D3C4D">
-                        <img src="images/virtual-private-system-vps-Virtueel-Prive-Systeem.svg" />
-                    </div>
-                    <h2>Do you want to be able to work as an accountant from anywhere?</h2>
-                    <p>
-                        This is perfectly possible with our cloud-based network; we provide a secure network where you can work from anywhere in the world as if you were in the office.
-                    </p>
-                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                </div>
-
-                <div class="card">
-                    <img src="images/liam-virtual-network-420.png" class="w-100" />
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Data Recovery -->
-
-
-    <section style="background-color:">
-
-        <div class="container" style="padding-top: 50px">
-
-            <div>
-                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Data Recovery</h1>
-                <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
-            </div>
-
-            <div class="row align-items-center card mt-5">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-start">
                         <div class="icon-box p-1" style="background-color: #1D3C4D">
                             <img src="images/data-recovery.svg" />
                         </div>
-                        <h2 fw-bold" style="color: #1D3C4D;">Your laptop broke down and you have no backup?</h2>
-                        <p class="lead mt-3" style="color: black;">
-                            There's no need to panic. In most cases, we can still recover the data, even if the computer is completely dead! Contact us as soon as possible, and we'll usually recover your data.
-                        </p>
-                        <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                        <a class="nav-link" href="#data">
+                            <h3 style="color: #1D3C4D;">Data Recovery</h3>
+                            <p>Professional data recovery services for all types of storage media.</p>
+                        </a>
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <img src="images/hardware-harddrive-storage.png" class="w-75 p-3" />
-                    </div>
-                </div>
-            </div>
-
-    </section>
-
-
-    <!-- Email Signature -->
-
-    <section style="background-color:">
-
-        <div class="container" style="padding-top: 50px">
-
-            <div>
-                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Email Signature</h1>
-                <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
-            </div>
-
-            <div class="row align-items-center card mt-5">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-start">
-                        <div class="icon-box p-1" style="background-color: #1D3C4D">
-                            <img src="images/Email-Handtekeningen-email-signature.svg" />
-                        </div>
-                        <h2 fw-bold" style="color: #1D3C4D;">Send all your employees' emails with a signature that you determine?</h2>
-                        <p class="lead mt-3" style="color: black;">
-                            Whether it's the right new logo, the right phone numbers, or a monthly promotion, Convilguous can help you get it right and keep it that way with a centrally managed signature policy.
-                        </p>
-                        <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <img src="images/email-template-email-signature.png" class="w-75 p-3" />
-                    </div>
-                </div>
-            </div>
-
-            <br><br>
-
-    </section>
-
-    <!-- Spam Filter -->
-
-    <section style="background-color:">
-
-        <div class="container" style="padding-top: 50px">
-
-            <div>
-                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Spam Filter</h1>
-                <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
-            </div>
-
-            <div class="row align-items-center card mt-5">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-start">
-                        <div class="icon-box p-1" style="background-color: #1D3C4D">
-                            <img src="images/spamfilter-spam-filter-bad-email.svg" class="p-1" />
-                        </div>
-                        <h2 fw-bold" style="color: #1D3C4D;">Don't want to see unwanted emails without the risk of missing good ones?</h2>
-                        <p class="lead mt-3" style="color: black;">
-                            Subscribe to our spam filter. All emails will be saved, even if they're marked as spam. Our easy-to-use search system makes them easy to access at any time.
-                        </p>
-                        <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <img src="images/spamfilter-spam-emails-bad-emails.png" style="width:300px" class="p-3"/>
-                    </div>
-                </div>
-            </div>
-
-    </section>
-
-    <!-- Apple Support -->
-
-    <section style="background-color:">
-
-        <div class="container" style="padding-top: 50px">
-
-            <div>
-                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Apple Support</h1>
-                <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
-            </div>
-
-
-            <div class="row align-items-center card mt-5">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-start">
-                        <div class="icon-box p-1" style="background-color: #1D3C4D">
-                            <img src="images/apple-support-apple-ondersteuning.svg" />
-                        </div>
-                        <h2 fw-bold" style="color: #1D3C4D;">Do you work with Apple computers at work?</h2>
-                        <p class="lead mt-3" style="color: black;">
-                            Have you decided to work with Mac, but finding the right support is proving difficult? We can offer you the right solutions and support to integrate it into a corporate network or in the cloud with Microsoft 365.
-                        </p>
-                        <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <img src="images/yameen-apple-420.jpg" class="w-75 p-3" />
-                    </div>
-                </div>
-            </div>
-
-            <br><br>
-
-    </section>
-
-
-    <!-- Training -->
-
-
-    <section style="background-color:">
-
-        <div class="container" style="padding-top: 50px">
-
-            <div>
-                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Training</h1>
-                <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
-            </div>
-
-            <div class="services-grid mt-5" style="border-radius: 10px; background-color: #D9A426;">
-
-                <div class="card">
-                    <div class="icon-box p-1" style="background-color: #0D2533">
-                        <img src="images/training-courses-Opleidingen.svg" />
-                    </div>
-
-                    <h2>Are you making optimal use of your Microsoft 365 subscriptions?</h2>
-                    <p>
-                        We can provide you and your employees with the necessary training to maximize your Microsoft 365 subscriptions within your company and in the way you want to work.
-                    </p>
-                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                </div>
-
-                <div class="card">
-                    <div class="icon-box p-1" style="background-color: #0D2533">
-                        <img src="images/training-courses-Opleidingen.svg" />
-                    </div>
-                    <h2>Does everyone in your company know how to use two-factor authentication across many cloud services?</h2>
-                    <p>
-                        A short training session can work wonders and take your data security to a whole new level. We'll teach you how to set it up and use it easily, protecting you from password theft and employee manipulation.
-                    </p>
-                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                </div>
-
-                <div class="card">
-                    <div class="icon-box p-1" style="background-color: #0D2533">
-                        <img src="images/training-courses-Opleidingen.svg" />
-                    </div>
-                    <h2>Do you want to collaborate with external parties on the same documents?</h2>
-                    <p>
-                        We can provide you with everything you need to work on documents in the cloud, but even more importantly, we can train you to work with complete confidence through proper training.
-                    </p>
-                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Contact Us -->
-
-    <section style="background-color:">
-
-        <div class="container" style="padding-top: 50px">
-            <div>
-                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Contact Us</h1>
-                <p class="lead mt-3 text-center" style="color: #D9DEE3;">Do you have any questions or would you like more information? Feel free to contact us. We're happy to help!</h3>
-            </div>
-
-            <div class="container card mt-5" style="background-color: ">
-
-                <div class="row">
-
-                    <div class="col-md-6 text-center">
-                        <div class="icon-box p-1" style="background-color: #0D2533">
-                            <img src="images/parking.svg" />
-                        </div>
-                        <h2>Our parking spaces</h2>
-                        <p>
-                            Arrive stress-free: Reserved seats for visitors and customers.
-                        </p>
-                        <img src="images\car-parking-smart-phone.png" class="img-fluid w-75" />
-                        
-                    </div> 
-                    
-                    
-
-                    <div class="col-md-6 d-flex align-items-center justify-content-center mt-5">
-                        <video width="500" height="auto" autoplay muted loop playsinline style="border-radius: 10px; outline: 10px solid white; outline-offset: -5px;">
-                            <source src="video\ConvilguousParkingVideo.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    </div>
-                </div>
-
-                    <div class="services-grid mt-5" style="border-radius: 10px; background-color: #D9A426;">
-
 
                         <div class="card">
                             <div class="icon-box p-1" style="background-color: #1D3C4D">
-                                <img src="images/location.svg" />
+                                <img src="images/virtual-private-system-vps-Virtueel-Prive-Systeem.svg" />
                             </div>
-                            <h3>Address</h3>
-                            <p>
-                                Herkenrodesingel 4a
-                                3500 Hasselt, Belgium
-                            </p>
+                            <a class="nav-link" href="#virtual">
+                                <h3 style="color: #1D3C4D;">Virtual Private System</h3>
+                                <p>VPS solutions in our Luxembourg data center for maximum reliability.</p>
+                            </a>
                         </div>
 
-
-                        <div class="card">
-                            <div class="icon-box p-1" style="background-color: #1D3C4D">
-                                <img src="images/phone.svg" />
+                            <div class="card">
+                                <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                    <img src="images/training-courses-Opleidingen.svg" />
+                                </div>
+                                <a class="nav-link" href="#training">
+                                    <h3 style="color: #1D3C4D;">Training</h3>
+                                    <p>Microsoft 365 training and cybersecurity courses for your team.</p>
+                                </a>
                             </div>
-                            <h3>Telephone</h3>
-                            <p>+32 11 28 08 98</p>
-                        </div>
+                            
+                                <div class="card">
+                                    <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                        <img src="images/Email-Handtekeningen-email-signature.svg" />
+                                    </div>
+                                    <a class="nav-link" href="#email">
+                                        <h3 style="color: #1D3C4D;">Email Signature</h3>
+                                        <p>Centrally managed email signatures for consistent business communications.</p>
+                                    </a>
+                                </div>
+
+                                    <div class="card">
+                                        <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                            <img src="images/Backup-cloud.svg" />
+                                        </div>
+                                        <a class="nav-link" href="#backup">
+                                            <h3 style="color: #1D3C4D;">Backup</h3>
+                                            <p>Encrypted cloud backup solutions in our Luxembourg data center.</p>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <br><br>
+                                </div>
 
 
-                        <div class="card">
-                            <div class="icon-box p-1" style="background-color: #1D3C4D">
-                                <img src="images/mail.svg" />
-                            </div>
-                            <h3>Email</h3>
-                            <p>info@convilguous.com</p>
-                        </div>
+                                </section>
+                                <div id="domain">
 
-                    </div>
+                                    <!-- Domain Registration -->
 
-                    <div class="card mt-5">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.3626155965662!2d5.3797022769772305!3d50.93550665232014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c121017e403b27%3A0xc9bac6477f24ad63!2sConvilguous!5e0!3m2!1sen!2sph!4v1686279749063!5m2!1sen!2sph" height="450" style="border: 0; width: 100%;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                                    <section style="background-color:">
+                                        <div class="container">
 
-                </div>
+                                            <div>
+                                                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Domain Names</h1>
+                                                <p class="lead mt-3 text-center" style="color: #D9DEE3;">
+                                                    Your trusted partner in delivering innovative technology solutions.</h3>
+                                            </div>
 
+                                            <div class="card" style="background-color: #1D3C4D ">
+                                                <div class="container" style="padding-top: ">
+                                                    <div class="row align-items-center card">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-md-6 text-start">
+                                                                <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                    <img src="images/domain-name-domains-Domeinnamen.svg" />
+                                                                </div>
+                                                                <h2 fw-bold" style="color: #1D3C4D;">Are you losing a lot of time due to a lack of the right software?</h2>
+                                                                <p class="lead mt-3" style="color: black;">
+                                                                    Perhaps you're already using software to manage your orders, but you're lacking effective sales tracking or control over your production process?
+                                                                    Convilguous can help by integrating with your existing system and translating your company's specific workflows into efficient software.
+                                                                    This can be done with software for PC, Mac, and apps for Android and iPhone. The cost of some upgrades might surprise you.
+                                                                </p>
+                                                                <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                            </div>
+                                                            <div class="col-md-6 text-center text-md-end">
+                                                                <img src="images/domainname.png" class="w-75 p-3" />
+                                                            </div>
 
-                </div>
+                                                        </div>
+                                                    </div>
 
-               
+                                                </div>
+                                            </div>
 
-            </div>
-
-        </div>
-
-        <br><br>
-
-    </section>
-
-    <hr>
-
-    <!-- Footer -->
-
-    <div class="container">
-
-        <!-- Footer -->
-
-        <div class="text-white text-center">
-            <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Follow us for your own safety!</h1>
-            <img src="images/facebook.svg" style="width: 50px;" alt="Facebook" />
-            <img src="images/instagram.svg" style="width: 50px;" alt="Instagram" />
-            <img src="images/linkedin.svg" style="width: 50px;" alt="LinkedIn" />
-</div>
-        </div>
-
-            <button id="scrollTopBtn" title="Go to top">&#8593;</button>
-
-            <nav class=" navbar navbar-expand-sm navbar-dark" style="background-color: #0D2533">
-                
-                    <div class="container justify-content-center">
-                        <span class="navbar-text">
-
-                            &copy; 2026 - Convilguous - Privacy
+                                    </section>
 
 
-                        </span>
+                                    <!-- Proactive Management -->
+                                    <div id="proactive">
+
+                                        <section style="background-color:">
+
+                                            <div class="container mt-5">
+                                                <div>
+                                                    <h1 class="display-5 fw-bold text-center" style="color: #D9A426">Proactive Management</h1>
+                                                    <p class="lead mt-3 text-center" style="color: #D9DEE3">Your trusted partner in delivering innovative technology solutions.</h3>
+                                                </div>
+
+                                                <div class="container">
+
+                                                    <div class="services-grid" style="border-radius: 10px; background-color: #D9A426;">
+
+                                                        <div class="card">
+                                                            <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                <img src="images/proactive-management-Proactief-beheer.svg" />
+                                                            </div>
+                                                            <h2 style="color: #1D3C4D;">Having no problems is better than solving them, right?</h2>
+                                                            <p>
+                                                                Our Symbiosis monitoring agents allow us to anticipate many problems before they occur, and in the event of a failure,
+                                                                we can intervene before you even notice, or be ready at your door in the morning to carry out a repair you didn't know was necessary.
+                                                            </p>
+                                                            <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                        </div>
+
+                                                        <div class="card">
+                                                            <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                <img src="images/proactive-management-Proactief-beheer.svg" />
+                                                            </div>
+                                                            <h2 style="color: #1D3C4D;">IT costs out of control?</h2>
+                                                            <p>Take out one of our “All-in” contracts and know where you stand without any unpleasant surprises.</p>
+                                                            <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                        </div>
+
+                                                        <div class="card">
+                                                            <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                <img src="images/proactive-management-Proactief-beheer.svg" />
+                                                            </div>
+                                                            <h2 style="color: #1D3C4D;">Do you know how much each computer is used and by whom?</h2>
+                                                            <p>
+                                                                Our monitoring system also tells us which computers are being used most actively and by which users.
+                                                                This way, you know when it's best to update a server or when your remote workers are best reachable.
+                                                            </p>
+                                                            <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                        </div>
+
+                                                    </div>
+                                                    <br><br>
+                                                </div>
+
+                                        </section>
+
+
+                                        <!-- Software Development -->
+                                        <div id="software">
+
+                                            <section style="background-color:">
+                                                <div class="container">
+
+                                                    <div>
+                                                        <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Software Development</h1>
+                                                        <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</p>
+
+                                                    </div>
+
+                                                    <div class="card" style="background-color: #1D3C4D ">
+                                                        <div class="container" style="padding-top: ">
+                                                            <div class="row align-items-center card">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-md-6 text-start">
+                                                                        <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                            <img src="images/software-development-Software-ontwikkeling.svg" />
+
+                                                                        </div>
+                                                                        <h2 fw-bold" style="color: #1D3C4D;">Are you losing a lot of time due to a lack of the right software?</h2>
+                                                                        <p class="lead mt-3" style="color: black;">
+                                                                            Perhaps you're already using software to manage your orders, but you're lacking effective sales tracking or control over your production process?
+                                                                            Convilguous can help by integrating with your existing system and translating your company's specific workflows into efficient software.
+                                                                            This can be done with software for PC, Mac, and apps for Android and iPhone. The cost of some upgrades might surprise you.
+                                                                        </p>
+                                                                        <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                    </div>
+                                                                    <div class="col-md-6 text-center text-md-end">
+                                                                        <img src="images/software-development.jpg" class="w-75 p-3" />
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                            </section>
+
+                                            <section>
+
+                                                <div class="container mt-5">
+                                                    <div class="card" style="background-color: #1D3C4D ">
+                                                        <div class="container" style="padding-top:">
+                                                            <div class="row align-items-center card">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-md-6 text-start">
+                                                                        <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                            <img src="images/software-development-Software-ontwikkeling.svg" />
+                                                                        </div>
+                                                                        <h2 fw-bold" style="color: #1D3C4D;">Are you losing a lot of time due to a lack of the right software?</h2>
+                                                                        <p class="lead mt-3" style="color: black;">
+                                                                            Perhaps you're already using software to manage your orders, but you're lacking effective sales tracking or control over your production process?
+                                                                            Convilguous can help by integrating with your existing system and translating your company's specific workflows into efficient software.
+                                                                            This can be done with software for PC, Mac, and apps for Android and iPhone. The cost of some upgrades might surprise you.
+                                                                        </p>
+                                                                        <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                    </div>
+                                                                    <div class="col-md-6 text-center text-md-end">
+                                                                        <img src="images/software-development-mobile-application-desktop-application-web-development.png" class="w-75 p-3" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+
+                                            </section>
+
+                                            <!-- Security -->
+                                            <div id="security">
+
+                                                <section style="background-color:">
+
+                                                    <div class="container" style="padding-top: 50px">
+                                                        <div>
+                                                            <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Security</h1>
+                                                            <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
+                                                        </div>
+
+                                                        <div class="services-grid mt-5" style="border-radius: 10px; background-color: #D9A426;">
+
+                                                            <div class="card">
+                                                                <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                    <img src="images/security-cybersecurity-Beveiliging.svg" />
+                                                                </div>
+                                                                <h2 style="color: #1D3C4D;">Are you unsure whether everything is in order in and around your IT infrastructure?</h2>
+                                                                <p>
+                                                                    Eliminate your doubts with one of our security audits and keep your doubts at bay by subscribing to one of our proactive contracts,
+                                                                    which allows us to continuously monitor everything and effectively alleviate any concerns you may have.
+                                                                </p>
+                                                                <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                            </div>
+
+                                                            <div class="card">
+                                                                <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                    <img src="images/security-cybersecurity-Beveiliging.svg" />
+                                                                </div>
+                                                                <h2 style="color: #1D3C4D;">Want to keep hackers and viruses out?</h2>
+                                                                <p>
+                                                                    This can easily be remedied by having the right hardware and software configured correctly to keep your so-called “surface of attack” as small as possible.
+                                                                </p>
+                                                                <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                            </div>
+
+                                                            <div class="card">
+                                                                <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                    <img src="images/security-cybersecurity-Beveiliging.svg" />
+                                                                </div>
+                                                                <h2 style="color: #1D3C4D;">Your Microsoft 365 account was hacked?</h2>
+                                                                <p>
+                                                                    This can easily be avoided in the future. Contact us so we can repair the damage and prevent it from happening again.
+                                                                </p>
+                                                                <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                            </div>
+
+                                                            <div class="card">
+                                                                <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                    <img src="images/security-cybersecurity-Beveiliging.svg" />
+                                                                </div>
+                                                                <h2 style="color: #1D3C4D;">Unlimited internet access is dangerous and unproductive.</h2>
+                                                                <p>
+                                                                    By using a properly sized firewall and analyzing your working methods, we ensure the correct configuration of that firewall, allowing you to work safely and with maximum productivity.
+                                                                </p>
+                                                                <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                            </div>
+
+                                                            <div class="card">
+                                                                <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                    <img src="images/security-cybersecurity-Beveiliging.svg" />
+                                                                </div>
+                                                                <h2 style="color: #1D3C4D;">Google says your website is unsafe?</h2>
+                                                                <p>
+                                                                    We can ensure that your website offers a secure connection, thus gaining the trust of Google and the world.
+                                                                </p>
+                                                                <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                            </div>
+
+                                                            <div class="card">
+                                                                <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                    <img src="images/security-cybersecurity-Beveiliging.svg" />
+                                                                </div>
+                                                                <h2 style="color: #1D3C4D;">Keep someone else out of your laptop even with your password?</h2>
+                                                                <p>
+                                                                    This seems impossible, but it isn't. With two-factor authentication on your Windows computer, you have to confirm on your phone that it's really you to log in.
+                                                                </p>
+                                                                <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <br><br>
+                                                    </div>
+
+                                                </section>
+
+                                                <!-- Hardware -->
+                                                <div id="hardware">
+
+                                                    <section style="background-color:">
+                                                        <div class="container">
+
+                                                            <div>
+                                                                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Domain Names</h1>
+                                                                <p class="lead mt-3 text-center" style="color: #D9DEE3;">
+                                                                    Your trusted partner in delivering innovative technology solutions.</h3>
+                                                            </div>
+
+                                                            <div class="card" style="background-color: #1D3C4D ">
+                                                                <div class="container" style="padding-top: ">
+                                                                    <div class="row align-items-center card">
+                                                                        <div class="row align-items-center">
+                                                                            <div class="col-md-6 text-start">
+                                                                                <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                                    <img src="images/hardware.svg" />
+
+                                                                                </div>
+                                                                                <h2 fw-bold" style="color: #1D3C4D;">Your computers are getting on in years, but you don't know exactly what to provide?</h2>
+                                                                                <p class="lead mt-3" style="color: black;">
+                                                                                    We analyze your working methods and the resulting needs, after which we can provide you with the right hardware and get it ready for use.
+                                                                                    All of this for a clearly agreed-upon price.
+
+                                                                                </p>
+                                                                                <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                            </div>
+                                                                            <div class="col-md-6 text-center text-md-end">
+                                                                                <img src="images/hardware-development-hardware-repair.png" class="w-75 p-3" />
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                    </section>
+
+                                                    <section style="background-color:">
+
+                                                        <div class="container mt-5">
+                                                            <div class="card" style="background-color: #1D3C4D ">
+                                                                <div class="container" style="padding-top:">
+                                                                    <div class="row align-items-center card">
+                                                                        <div class="row align-items-center">
+                                                                            <div class="col-md-6 text-start">
+                                                                                <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                                    <img src="images/hardware.svg" />
+                                                                                </div>
+                                                                                <h2 fw-bold" style="color: #1D3C4D;">Is your WiFi coverage not optimal?</h2>
+                                                                                <p class="lead mt-3" style="color: black;">
+                                                                                    An analysis of your setup and any potential interference from your neighbors can provide us with the information we need to offer you the right solution for worry-free Wi-Fi coverage everywhere.
+                                                                                </p>
+                                                                                <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                            </div>
+                                                                            <div class="col-md-6 text-center text-md-end">
+                                                                                <img src="images/wifi-internet-problem-modem-repair-internet-connection-secure-connection.png" class="w-75 p-3" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                    </section>
+
+
+                                                    <!-- Advice / Consulting -->
+                                                    <div id="consulting">
+
+                                                        <section style="background-color:">
+
+                                                            <div class="container" style="padding-top: 50px">
+                                                                <div>
+                                                                    <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Advice/Consulting</h1>
+                                                                    <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
+                                                                </div>
+
+
+                                                                <div class="services-grid mt-5" style="border-radius: 10px; background-color: #D9A426;">
+
+                                                                    <div class="card">
+                                                                        <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                            <img src="images/consultation-advice-Advisering.svg" />
+                                                                        </div>
+                                                                        <h2 style="color: #1D3C4D;">You've taken over an existing environment, what now?</h2>
+                                                                        <p>
+                                                                            Call on one of our experts and we'll guide you to where you want to be in the most cost-effective and efficient way.
+                                                                        </p>
+                                                                        <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                    </div>
+
+                                                                    <div class="card">
+                                                                        <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                            <img src="images/consultation-advice-Advisering.svg" />
+                                                                        </div>
+                                                                        <h2 style="color: #1D3C4D;">Move to the cloud or install everything at the office?</h2>
+                                                                        <p>
+                                                                            Cloud, cloud, cloud... everyone's been talking about it these days. But is this the right solution for you? It might be,
+                                                                            but perhaps it's too early, or could a solution for your company be found somewhere between the two? At Convilguous,
+                                                                            we're not tied to either solution because we're experts in all these markets.
+                                                                            Schedule an appointment with one of our experts to find an unbiased solution for your specific environment.
+                                                                        </p>
+                                                                        <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                    </div>
+
+                                                                    <div class="card d-flex align-items-center justify-content-center">
+                                                                        <img src="images/consultation-advisering.png" class="w-75" />
+                                                                    </div>
+                                                                </div>
+                                                                <br><br>
+                                                            </div>
+
+                                                        </section>
+
+
+                                                        <!-- Backup -->
+                                                        <div id="backup">
+
+                                                            <section style="background-color:">
+
+                                                                <div class="container">
+                                                                    <div>
+                                                                        <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Backup</h1>
+                                                                        <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
+                                                                    </div>
+
+                                                                    <div class="services-grid mt-5" style="border-radius: 10px; background-color: #D9A426;">
+
+                                                                        <div class="card">
+                                                                            <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                                <img src="images/Backup-cloud.svg" />
+                                                                            </div>
+                                                                            <h2 style="color: #1D3C4D;">Do you have a copy of all your data safely stored off-site?</h2>
+                                                                            <p>
+                                                                                Our Cloud Backup solution stores a complete copy of your backup in our Luxembourg data center, far from any danger. Backups are encrypted when sent and can only be decrypted by restoring the backup.
+                                                                            </p>
+                                                                            <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                        </div>
+
+                                                                        <div class="card">
+                                                                            <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                                <img src="images/Backup-cloud.svg" />
+                                                                            </div>
+                                                                            <h2 style="color: #1D3C4D;">A backup of your data without any worries or follow-up from you?</h2>
+                                                                            <p>
+                                                                                We can take care of backing up your server to quickly retrieve a deleted file or, in the event of a disaster, get all your servers up and running again in no time, all without you having to invest any time or worry.
+                                                                            </p>
+                                                                            <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                        </div>
+
+                                                                        <div class="card">
+                                                                            <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                                <img src="images/Backup-cloud.svg" />
+                                                                            </div>
+                                                                            <h2 style="color: #1D3C4D;">No, not everything is safely stored in OneDrive or SharePoint!</h2>
+                                                                            <p>
+                                                                                Everything you've saved in OneDrive or SharePoint can quickly disappear, leaving you with no way to retrieve it. And it certainly shouldn't be a hardware failure;
+                                                                                someone stealing your Microsoft 365 subscription password is enough to erase or encrypt all your files. Don't hesitate to contact us so we can protect your data from all the threats lurking online.
+                                                                            </p>
+                                                                            <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                        </div>
+
+                                                                        <div class="card">
+                                                                            <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                                <img src="images/Backup-cloud.svg" />
+                                                                            </div>
+                                                                            <h2 style="color: #1D3C4D;">Google says your website is unsafe?</h2>
+                                                                            <p>
+                                                                                We can ensure that your website offers a secure connection, thus gaining the trust of Google and the world.
+                                                                            </p>
+                                                                            <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                        </div>
+
+                                                                        <div class="card">
+                                                                            <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                                <img src="images/Backup-cloud.svg" />
+                                                                            </div>
+                                                                            <h2 style="color: #1D3C4D;">All data stored on a Synology NAS?</h2>
+                                                                            <p>
+                                                                                A NAS also needs a backup, because even though it offers protection against a failed hard drive, hackers, viruses, or a careless user,
+                                                                                it lacks all of that. Let's ensure that all data is also stored off-site and can be retrieved in the event of a disaster.
+                                                                            </p>
+                                                                            <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <br><br>
+                                                                </div>
+
+                                                            </section>
+
+                                                            <!-- Virtual Private System -->
+                                                            <div id="virtual">
+
+
+                                                                <section style="background-color:">
+
+                                                                    <div class="container">
+
+                                                                        <div>
+                                                                            <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Virtual Private System</h1>
+                                                                            <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
+                                                                        </div>
+
+                                                                        <div class="services-grid mt-5" style="border-radius: 10px; background-color: #D9A426;">
+
+                                                                            <div class="card">
+                                                                                <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                                    <img src="images/virtual-private-system-vps-Virtueel-Prive-Systeem.svg" />
+                                                                                </div>
+                                                                                <h2 style="color: #1D3C4D;">All the benefits of your own server without your own server?</h2>
+                                                                                <p>
+                                                                                    No need for powerful laptops and an expensive server on-site when we provide a virtual network in our datacenter.
+                                                                                    Just like with your own server and laptops on-site, you'll work in your own closed system, but you'll only need basic laptops.
+                                                                                    Contact us, and we can advise you on the feasibility and, of course, the cost of such a setup.
+                                                                                </p>
+                                                                                <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                            </div>
+
+                                                                            <div class="card">
+                                                                                <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                                    <img src="images/virtual-private-system-vps-Virtueel-Prive-Systeem.svg" />
+                                                                                </div>
+                                                                                <h2 style="color: #1D3C4D;">Do you want to be able to work as an accountant from anywhere?</h2>
+                                                                                <p>
+                                                                                    This is perfectly possible with our cloud-based network; we provide a secure network where you can work from anywhere in the world as if you were in the office.
+                                                                                </p>
+                                                                                <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                            </div>
+
+                                                                            <div class="card">
+                                                                                <img src="images/liam-virtual-network-420.png" class="w-100" />
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </section>
+
+
+                                                                <!-- Data Recovery -->
+                                                                <div id="data">
+
+
+                                                                    <section style="background-color:">
+
+                                                                        <div class="container" style="padding-top: 50px">
+
+                                                                            <div>
+                                                                                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Data Recovery</h1>
+                                                                                <p class="lead mt-3 text-center" style="color: #D9DEE3;">
+                                                                                    Your trusted partner in delivering innovative technology solutions.
+                                                                                </p>
+                                                                            </div>
+
+                                                                            <div class="card" style="background-color: #1D3C4D ">
+                                                                                <div class="container" style="padding-top: ">
+                                                                                    <div class="row align-items-center card">
+                                                                                        <div class="row align-items-center">
+                                                                                            <div class="col-md-6 text-start">
+                                                                                                <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                                                    <img src="images/data-recovery.svg" />
+                                                                                                </div>
+                                                                                                <h2 fw-bold" style="color: #1D3C4D;">Your laptop broke down and you have no backup?</h2>
+                                                                                                <p class="lead mt-3" style="color: black;">
+                                                                                                    There's no need to panic. In most cases, we can still recover the data, even if the computer is completely dead! Contact us as soon as possible,
+                                                                                                    and we'll usually recover your data.
+
+                                                                                                </p>
+                                                                                                <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                                            </div>
+                                                                                            <div class="col-md-6 text-center text-md-end">
+                                                                                                <img src="images/hardware-harddrive-storage.png" class="w-75 p-3" />
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+
+                                                                    </section>
+
+
+                                                                    <!-- Email Signature -->
+                                                                    <div id="email">
+
+                                                                        <section style="background-color:">
+                                                                            <div class="container mt-5">
+
+                                                                                <div>
+                                                                                    <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Email Signature</h1>
+                                                                                    <p class="lead mt-3 text-center" style="color: #D9DEE3;">
+                                                                                        Your trusted partner in delivering innovative technology solutions.</h3>
+                                                                                </div>
+
+                                                                                <div class="card" style="background-color: #1D3C4D ">
+                                                                                    <div class="container" style="padding-top: ">
+                                                                                        <div class="row align-items-center card">
+                                                                                            <div class="row align-items-center">
+                                                                                                <div class="col-md-6 text-start">
+                                                                                                    <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                                                        <img src="images/Email-Handtekeningen-email-signature.svg" />
+                                                                                                    </div>
+                                                                                                    <h2 fw-bold" style="color: #1D3C4D;">Send all your employees' emails with a signature that you determine?</h2>
+                                                                                                    <p class="lead mt-3" style="color: black;">
+                                                                                                        Whether it's the right new logo, the right phone numbers, or a monthly promotion,
+                                                                                                        Convilguous can help you get it right and keep it that way with a centrally managed signature policy.
+
+                                                                                                    </p>
+                                                                                                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                                                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                                                </div>
+                                                                                                <div class="col-md-6 text-center text-md-end">
+                                                                                                    <img src="images/email-template-email-signature.png" class="w-75 p-3" />
+
+                                                                                                </div>
+
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                    </div>
+                                                                                </div>
+
+                                                                        </section>
+
+                                                                        <!-- Spam Filter -->
+                                                                        <div id="spam">
+
+                                                                            <section style="background-color:">
+                                                                                <div class="container mt-5">
+
+                                                                                    <div>
+                                                                                        <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Spam Filter</h1>
+                                                                                        <p class="lead mt-3 text-center" style="color: #D9DEE3;">
+                                                                                            Your trusted partner in delivering innovative technology solutions.</h3>
+                                                                                    </div>
+
+                                                                                    <div class="card" style="background-color: #1D3C4D ">
+                                                                                        <div class="container" style="padding-top: ">
+                                                                                            <div class="row align-items-center card">
+                                                                                                <div class="row align-items-center">
+                                                                                                    <div class="col-md-6 text-start">
+                                                                                                        <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                                                            <img src="images/spamfilter-spam-filter-bad-email.svg" class="p-1" />
+
+                                                                                                        </div>
+                                                                                                        <h2 fw-bold" style="color: #1D3C4D;">Don't want to see unwanted emails without the risk of missing good ones?</h2>
+                                                                                                        <p class="lead mt-3" style="color: black;">
+                                                                                                            Subscribe to our spam filter. All emails will be saved, even if they're marked as spam. Our easy-to-use search system makes them easy to access at any time.
+
+                                                                                                        </p>
+                                                                                                        <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                                                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                                                    </div>
+                                                                                                    <div class="col-md-6 text-center text-md-end">
+                                                                                                        <img src="images/spamfilter-spam-emails-bad-emails.png" style="width:300px" class="p-3" />
+
+                                                                                                    </div>
+
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                            </section>
+
+                                                                            <!-- Apple Support -->
+                                                                            <div id="apple">
+
+                                                                                <section style="background-color:">
+                                                                                    <div class="container mt-5">
+
+                                                                                        <div>
+                                                                                            <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Apple Support</h1>
+                                                                                            <p class="lead mt-3 text-center" style="color: #D9DEE3;">
+                                                                                                Your trusted partner in delivering innovative technology solutions.</h3>
+                                                                                        </div>
+
+                                                                                        <div class="card" style="background-color: #1D3C4D ">
+                                                                                            <div class="container" style="padding-top: ">
+                                                                                                <div class="row align-items-center card">
+                                                                                                    <div class="row align-items-center">
+                                                                                                        <div class="col-md-6 text-start">
+                                                                                                            <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                                                                <img src="images/apple-support-apple-ondersteuning.svg" />
+
+                                                                                                            </div>
+                                                                                                            <h2 fw-bold" style="color: #1D3C4D;">Do you work with Apple computers at work?</h2>
+                                                                                                            <p class="lead mt-3" style="color: black;">
+                                                                                                                Have you decided to work with Mac, but finding the right support is proving difficult?
+                                                                                                                We can offer you the right solutions and support to integrate it into a corporate network or in the cloud with Microsoft 365.
+
+                                                                                                            </p>
+                                                                                                            <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                                                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-6 text-center text-md-end">
+                                                                                                            <img src="images/yameen-apple-420.jpg" class="w-75 p-3" />
+                                                                                                        </div>
+
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                </section>
+
+
+                                                                                <!-- Training -->
+                                                                                <div id="training">
+
+
+                                                                                    <section style="background-color:">
+
+                                                                                        <div class="container" style="padding-top: 50px">
+
+                                                                                            <div>
+                                                                                                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Training</h1>
+                                                                                                <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
+                                                                                            </div>
+
+                                                                                            <div class="services-grid mt-5" style="border-radius: 10px; background-color: #D9A426;">
+
+                                                                                                <div class="card">
+                                                                                                    <div class="icon-box p-1" style="background-color: #0D2533">
+                                                                                                        <img src="images/training-courses-Opleidingen.svg" />
+                                                                                                    </div>
+
+                                                                                                    <h2 style="color: #1D3C4D;">Are you making optimal use of your Microsoft 365 subscriptions?</h2>
+                                                                                                    <p>
+                                                                                                        We can provide you and your employees with the necessary training to maximize your Microsoft 365 subscriptions within your company and in the way you want to work.
+                                                                                                    </p>
+                                                                                                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                                                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                                                </div>
+
+                                                                                                <div class="card">
+                                                                                                    <div class="icon-box p-1" style="background-color: #0D2533">
+                                                                                                        <img src="images/training-courses-Opleidingen.svg" />
+                                                                                                    </div>
+                                                                                                    <h2 style="color: #1D3C4D;">Does everyone in your company know how to use two-factor authentication across many cloud services?</h2>
+                                                                                                    <p>
+                                                                                                        A short training session can work wonders and take your data security to a whole new level. We'll teach you how to set it up and use it easily, protecting you from password theft and employee manipulation.
+                                                                                                    </p>
+                                                                                                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                                                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                                                </div>
+
+                                                                                                <div class="card">
+                                                                                                    <div class="icon-box p-1" style="background-color: #0D2533">
+                                                                                                        <img src="images/training-courses-Opleidingen.svg" />
+                                                                                                    </div>
+                                                                                                    <h2 style="color: #1D3C4D;">Do you want to collaborate with external parties on the same documents?</h2>
+                                                                                                    <p>
+                                                                                                        We can provide you with everything you need to work on documents in the cloud, but even more importantly, we can train you to work with complete confidence through proper training.
+                                                                                                    </p>
+                                                                                                    <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
+                                                                                                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </section>
+
+
+                                                                                    <!-- Contact Us -->
+                                                                                    <div id="contact">
+
+                                                                                        <section style="background-color:">
+
+                                                                                            <div class="container mt-5">
+
+                                                                                                <div>
+                                                                                                    <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Contact Us</h1>
+                                                                                                    <p class="lead mt-3 text-center" style="color: #D9DEE3;">
+                                                                                                        Your trusted partner in delivering innovative technology solutions.</h3>
+                                                                                                </div>
+
+                                                                                                <div class="card" style="background-color: #1D3C4D ">
+                                                                                                    <div class="container" style="padding-top: ">
+                                                                                                        <div class="row align-items-center card">
+                                                                                                            <div class="row align-items-center">
+                                                                                                                <div class="col-md-6 text-start">
+                                                                                                                    <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                                                                        <img src="images/parking.svg" />
+
+                                                                                                                    </div>
+                                                                                                                    <h2 fw-bold" style="color: #1D3C4D;">Our parking spaces</h2>
+                                                                                                                    <p class="lead mt-3" style="color: black;">
+                                                                                                                        Arrive stress-free: Reserved seats for visitors and customers.
+                                                                                                                    </p>
+                                                                                                                    <img src="images\car-parking-smart-phone.png" class="img-fluid w-75" />
+
+                                                                                                                </div>
+                                                                                                                <div class="col-md-6 text-center text-md-end">
+                                                                                                                    <video autoplay muted loop playsinline
+                                                                                                                           style="width: 100%; max-width: 500px; height: auto; border-radius: 10px; outline: 10px solid #1D3C4D; outline-offset: -5px;">
+                                                                                                                        <source src="video/ConvilguousParkingVideo.mp4" type="video/mp4">
+                                                                                                                    </video>
+                                                                                                                </div>
+
+                                                                                                            </div>
+                                                                                                        </div>
+
+                                                                                                    </div>
+                                                                                                </div>
+
+
+
+                                                                                                <div class="services-grid mt-5" style="border-radius: 10px; background-color: #1D3C4D;">
+
+
+                                                                                                    <div class="card">
+                                                                                                        <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                                                            <img src="images/location.svg" />
+                                                                                                        </div>
+                                                                                                        <h3 style="color: #1D3C4D;">Address</h3>
+                                                                                                        <p>
+                                                                                                            Herkenrodesingel 4a
+                                                                                                            3500 Hasselt, Belgium
+                                                                                                        </p>
+                                                                                                    </div>
+
+
+                                                                                                    <div class="card">
+                                                                                                        <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                                                            <img src="images/phone.svg" />
+                                                                                                        </div>
+                                                                                                        <h3 style="color: #1D3C4D;">Telephone</h3>
+                                                                                                        <p>+32 11 28 08 98</p>
+                                                                                                    </div>
+
+
+                                                                                                    <div class="card">
+                                                                                                        <div class="icon-box p-1" style="background-color: #1D3C4D">
+                                                                                                            <img src="images/mail.svg" />
+                                                                                                        </div>
+                                                                                                        <h3 style="color: #1D3C4D;">Email</h3>
+                                                                                                        <p>info@convilguous.com</p>
+                                                                                                    </div>
+
+                                                                                                </div>
+
+                                                                                                <div class="card mt-5" style="border-radius: 10px; background-color: #1D3C4D;">
+                                                                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.3626155965662!2d5.3797022769772305!3d50.93550665232014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c121017e403b27%3A0xc9bac6477f24ad63!2sConvilguous!5e0!3m2!1sen!2sph!4v1686279749063!5m2!1sen!2sph" height="450" style="border: 0; width: 100%;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                                                                </div>
+
+                                                                                            </div>
+
+
+                                                                                    </div>
+
+
+
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <br><br>
+
+                                                                            </section>
+
+                                                                            <hr>
+
+                                                                            <!-- Footer -->
+
+                                                                            <div class="container">
+
+                                                                                <!-- Footer -->
+
+                                                                                <div class="text-white text-center">
+                                                                                    <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Follow us for your own safety!</h1>
+                                                                                    <img src="images/facebook.svg" style="width: 50px;" alt="Facebook" />
+                                                                                    <img src="images/instagram.svg" style="width: 50px;" alt="Instagram" />
+                                                                                    <img src="images/linkedin.svg" style="width: 50px;" alt="LinkedIn" />
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <button id="scrollTopBtn" title="Go to top">&#8593;</button>
+
+                                                                            <nav class=" navbar navbar-expand-sm navbar-dark" style="background-color: #0D2533">
+
+                                                                                <div class="container justify-content-center">
+                                                                                    <span class="navbar-text">
+
+                                                                                        &copy; 2026 - Convilguous - Privacy
+
+
+                                                                                    </span>
 
 
 
@@ -1025,27 +1132,27 @@
 
 
 
-                        <script>
-                            // Paste the JavaScript code here
-                            const scrollTopBtn = document.getElementById("scrollTopBtn");
+                                                                                    <script>
+                                                                                        // Paste the JavaScript code here
+                                                                                        const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-                            // Show the button when the user scrolls down 200px from the top
-                            window.onscroll = function () {
-                                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                                    scrollTopBtn.style.display = "block";
-                                } else {
-                                    scrollTopBtn.style.display = "none";
-                                }
-                            };
+                                                                                        // Show the button when the user scrolls down 200px from the top
+                                                                                        window.onscroll = function () {
+                                                                                            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                                                                                                scrollTopBtn.style.display = "block";
+                                                                                            } else {
+                                                                                                scrollTopBtn.style.display = "none";
+                                                                                            }
+                                                                                        };
 
-                            // When the user clicks the button, scroll to the top
-                            scrollTopBtn.addEventListener("click", () => {
-                                window.scrollTo({
-                                    top: 0,
-                                    behavior: "smooth" // This creates the smooth gliding effect
-                                });
-                            });
-                        </script>
+                                                                                        // When the user clicks the button, scroll to the top
+                                                                                        scrollTopBtn.addEventListener("click", () => {
+                                                                                            window.scrollTo({
+                                                                                                top: 0,
+                                                                                                behavior: "smooth" // This creates the smooth gliding effect
+                                                                                            });
+                                                                                        });
+                                                                                    </script>
 </body>
 </html>
 

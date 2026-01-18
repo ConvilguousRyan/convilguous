@@ -14,6 +14,7 @@ body {
     padding: 40px;
     background-color: #f8fafc; /* Light grey background */
     font-family: sans-serif;
+    border: 1px solid #e2e8f0;
 }
 
 /* Individual Card Styling */
@@ -75,4 +76,8 @@ p {
 
 .orange {
     background-color: #f97316;
+}
+
+a {
+    text-decoration: none;
 }
