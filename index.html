@@ -19,7 +19,7 @@
     <nav class=" navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #0D2533">
         <div class="container-fluid">
             <!-- Brand / Logo -->
-            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
                 <!-- Using an image: Bootstrap will size/align it nicely in the navbar -->
                 <img src="images/Logo-small.svg"
                      alt="Logo"
@@ -29,46 +29,46 @@
                 <span>CONVILGUOUS</span>
             </a>
 
-            <!-- Toggler (for small screens) -->
-            <button class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#mainNavbar"
-                    aria-controls="mainNavbar"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <!-- Toggler (for small screens) -->
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNavbar"
+                        aria-controls="mainNavbar"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="mainNavbar">
-                <!-- Left links -->
-                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#solution">Solution</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#consulting">Consulting</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#training">Training</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#team">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <!-- Left links -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#solution">Solution</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#consulting">Consulting</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#training">Training</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
 
-                <!-- Navbar text (non-link content aligned vertically) -->
-                <span class="navbar-text">
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">Login</a>
-                </span>
-            </div>
-        </div>
+                    <!-- Navbar text (non-link content aligned vertically) -->
+                    <span class="navbar-text">
+                        <a href="login.html#login" class="btn btn-custom-gold btn-lg fs-5">Login</a>
+                    </span>
+                </div>
+</div>
     </nav>
 
 
@@ -78,20 +78,94 @@
     <section style="background-color:">
 
         <div class="container" style="padding-top: 150px">
+
             <div class="row align-items-center">
-                <div class="col-md-6 text-start mb-5">
-                    <h1 class="display-3 fw-bold" style="color: #D9A426;">Are you sure that backup of your data will work?</h1>
-                    <p class="lead mt-3" style="color: #D9DEE3;">Let us develop and implement a backup solution that protects your data from hackers, natural disasters, hardware failure, fire and water damage, and even the inevitable human error. All of this is done in such a way that no one else can access your backup data.</p>
-                    <h3 class="bold" style="color: #D9A426;">Want to know more?</h3>
-                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+
+                <div class="col-md-6 text-start d-flex justify-content-center">
+                    <div id="mainCarousel" class="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="8000">
+
+                        <!--
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="4"></button>
+        </div>-->
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="" style="min-height: 400px;">
+                                    <div>
+                                        <div>
+                                            <h1 class="display-5 fw-bold" style="color: #D9A426;">Are you sure that backup of your data will work?</h1>
+                                            <p class="lead mt-3" style="color: #D9DEE3;">Let us develop and implement a backup solution that protects your data from hackers, natural disasters, hardware failure, fire and water damage, and even the inevitable human error. All of this is done in such a way that no one else can access your backup data.</p>
+                                            <h3 class="bold" style="color: #D9A426;">Want to know more?</h3>
+                                            <a href="contact.html#contactform" class="btn btn-custom-gold btn-lg fs-5">CLICK HERE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="" style="min-height: 400px;">
+                                    <div>
+                                        <div>
+                                            <h1 class="display-5 fw-bold" style="color: #D9A426;">
+                                                Do you have a copy of all your data safely stored off-site?
+                                            </h1>
+                                            <p class="lead mt-3" style="color: #D9DEE3;">Our Cloud Backup solution stores a complete copy of your backup in our Luxembourg data center, far from any danger. Backups are encrypted when sent and can only be decrypted by restoring the backup.</p>
+                                            <h3 class="bold" style="color: #D9A426;">Want to know more?</h3>
+                                            <a href="contact.html#contactform" class="btn btn-custom-gold btn-lg fs-5">CLICK HERE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="" style="min-height: 400px;">
+                                    <div>
+                                        <div>
+                                            <h1 class="display-5 fw-bold" style="color: #D9A426;">A backup of your data without any worries or follow-up from you?</h1>
+                                            <p class="lead mt-3" style="color: #D9DEE3;">
+                                                We can take care of backing up your server to quickly retrieve a deleted file or, in the event of a disaster, get all your servers up and running again in no time, all without you having to invest any time or worry.
+                                            </p>
+                                            <h3 class="bold" style="color: #D9A426;">Want to know more?</h3>
+                                            <a href="contact.html#contactform" class="btn btn-custom-gold btn-lg fs-5">CLICK HERE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="" style="min-height: 400px;">
+                                    <div>
+                                        <div>
+                                            <h1 class="display-5 fw-bold" style="color: #D9A426;">
+                                                No, not everything is safely stored in OneDrive or SharePoint!
+                                            </h1>
+                                            <p class="lead mt-3" style="color: #D9DEE3;">
+                                                Everything you've saved in OneDrive or SharePoint can quickly disappear, leaving you with no way to retrieve it. And it certainly shouldn't be a hardware failure; someone stealing your Microsoft 365 subscription password is enough to erase or encrypt all your files. Don't hesitate to contact us so we can protect your data from all the threats lurking online.
+                                            </p>
+                                            <h3 class="bold" style="color: #D9A426;">Want to know more?</h3>
+                                            <a href="contact.html#contactform" class="btn btn-custom-gold btn-lg fs-5">CLICK HERE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 text-center text-md-end mb-5">
-                    <img class="img-fluid"src="images/1.2.1 belgium team.png" class="w-100" />
-                </div>
+
+                    <div class="col-md-6">
+                        <img class="img-fluid w-100" src="images/1.2.1 belgium team.png" />
+                    </div>
             </div>
         </div>
-
-    </section>
+       
+</div>
+</section>
 
 
     <!-- Solution -->
@@ -252,9 +326,7 @@
 
                                             <div>
                                                 <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Domain Names</h1>
-                                                <p class="lead mt-3 text-center" style="color: #D9DEE3;">
-                                                    Your trusted partner in delivering innovative technology solutions.</h3>
-                                            </div>
+                                                
 
                                             <div class="card" style="background-color: #1D3C4D ">
                                                 <div class="container" style="padding-top: ">
@@ -271,7 +343,7 @@
                                                                     This can be done with software for PC, Mac, and apps for Android and iPhone. The cost of some upgrades might surprise you.
                                                                 </p>
                                                                 <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                <a href="contact.html#contactform" class="btn btn-custom-gold btn-lg fs-5">CLICK HERE</a>
                                                             </div>
                                                             <div class="col-md-6 text-center text-center text-md-end">
                                                                 <img class="img-fluid p-3" src="images/domainname.png" style="border-radius:30px"/>
@@ -294,8 +366,7 @@
                                             <div class="container mt-5">
                                                 <div>
                                                     <h1 class="display-5 fw-bold text-center" style="color: #D9A426">Proactive Management</h1>
-                                                    <p class="lead mt-3 text-center" style="color: #D9DEE3">Your trusted partner in delivering innovative technology solutions.</h3>
-                                                </div>
+                                                    
 
                                                 <div class="container">
 
@@ -311,7 +382,7 @@
                                                                 we can intervene before you even notice, or be ready at your door in the morning to carry out a repair you didn't know was necessary.
                                                             </p>
                                                             <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                            <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                         </div>
 
                                                         <div class="card">
@@ -321,7 +392,7 @@
                                                             <h2 style="color: #1D3C4D;">IT costs out of control?</h2>
                                                             <p>Take out one of our “All-in” contracts and know where you stand without any unpleasant surprises.</p>
                                                             <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                            <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                         </div>
 
                                                         <div class="card">
@@ -334,7 +405,7 @@
                                                                 This way, you know when it's best to update a server or when your remote workers are best reachable.
                                                             </p>
                                                             <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                            <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                         </div>
 
                                                     </div>
@@ -352,9 +423,7 @@
 
                                                     <div>
                                                         <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Software Development</h1>
-                                                        <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</p>
-
-                                                    </div>
+                                                        
 
                                                     <div class="card" style="background-color: #1D3C4D ">
                                                         <div class="container" style="padding-top: ">
@@ -372,7 +441,7 @@
                                                                             This can be done with software for PC, Mac, and apps for Android and iPhone. The cost of some upgrades might surprise you.
                                                                         </p>
                                                                         <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                        <a href="contact.html#contactform" class="btn btn-custom-gold btn-lg fs-5">CLICK HERE</a>
                                                                     </div>
                                                                     <div class="col-md-6 text-center text-center text-md-end">
                                                                         <img src="images/software-development.jpg" class="img-fluid p-3" style="border-radius:30px"/>
@@ -405,7 +474,7 @@
                                                                             This can be done with software for PC, Mac, and apps for Android and iPhone. The cost of some upgrades might surprise you.
                                                                         </p>
                                                                         <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                        <a href="contact.html#contactform" class="btn btn-custom-gold btn-lg fs-5">CLICK HERE</a>
                                                                     </div>
                                                                     <div class="col-md-6 text-center text-center text-md-end">
                                                                         <img src="images/software-development-mobile-application-desktop-application-web-development.png" class="img-fluid p-3" style="border-radius:30px"/>
@@ -422,13 +491,12 @@
 
                                                 <section style="background-color:">
 
-                                                    <div class="container" style="padding-top: 50px">
+                                                    <div class="container mt-5">
                                                         <div>
                                                             <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Security</h1>
-                                                            <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
-                                                        </div>
+                                                            
 
-                                                        <div class="services-grid mt-5" style="border-radius: 10px; background-color: #D9A426;">
+                                                        <div class="services-grid1" style="border-radius: 10px; background-color: #D9A426;">
 
                                                             <div class="card">
                                                                 <div class="icon-box p-1" style="background-color: #1D3C4D">
@@ -440,7 +508,7 @@
                                                                     which allows us to continuously monitor everything and effectively alleviate any concerns you may have.
                                                                 </p>
                                                                 <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                             </div>
 
                                                             <div class="card">
@@ -452,7 +520,7 @@
                                                                     This can easily be remedied by having the right hardware and software configured correctly to keep your so-called “surface of attack” as small as possible.
                                                                 </p>
                                                                 <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                             </div>
 
                                                             <div class="card">
@@ -464,7 +532,7 @@
                                                                     This can easily be avoided in the future. Contact us so we can repair the damage and prevent it from happening again.
                                                                 </p>
                                                                 <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                             </div>
 
                                                             <div class="card">
@@ -476,7 +544,7 @@
                                                                     By using a properly sized firewall and analyzing your working methods, we ensure the correct configuration of that firewall, allowing you to work safely and with maximum productivity.
                                                                 </p>
                                                                 <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                             </div>
 
                                                             <div class="card">
@@ -488,7 +556,7 @@
                                                                     We can ensure that your website offers a secure connection, thus gaining the trust of Google and the world.
                                                                 </p>
                                                                 <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                             </div>
 
                                                             <div class="card">
@@ -500,7 +568,7 @@
                                                                     This seems impossible, but it isn't. With two-factor authentication on your Windows computer, you have to confirm on your phone that it's really you to log in.
                                                                 </p>
                                                                 <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                             </div>
 
                                                         </div>
@@ -516,10 +584,8 @@
                                                         <div class="container">
 
                                                             <div>
-                                                                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Domain Names</h1>
-                                                                <p class="lead mt-3 text-center" style="color: #D9DEE3;">
-                                                                    Your trusted partner in delivering innovative technology solutions.</h3>
-                                                            </div>
+                                                                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Hardware</h1>
+                                                                
 
                                                             <div class="card" style="background-color: #1D3C4D ">
                                                                 <div class="container" style="padding-top: ">
@@ -537,7 +603,7 @@
 
                                                                                 </p>
                                                                                 <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                                <a href="contact.html#contactform" class="btn btn-custom-gold btn-lg fs-5">CLICK HERE</a>
                                                                             </div>
                                                                             <div class="col-md-6 text-center text-center text-md-end">
                                                                                 <img src="images/hardware-development-hardware-repair.png" class="img-fluid p-3" style="border-radius:30px" />
@@ -567,7 +633,7 @@
                                                                                     An analysis of your setup and any potential interference from your neighbors can provide us with the information we need to offer you the right solution for worry-free Wi-Fi coverage everywhere.
                                                                                 </p>
                                                                                 <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                                <a href="contact.html#contactform" class="btn btn-custom-gold btn-lg fs-5">CLICK HERE</a>
                                                                             </div>
                                                                             <div class="col-md-6 text-center text-center text-md-end">
                                                                                 <img src="images/wifi-internet-problem-modem-repair-internet-connection-secure-connection.png" class="img-fluid p-3" />
@@ -583,14 +649,12 @@
 
                                                         <section style="background-color:">
 
-                                                            <div class="container" style="padding-top: 50px">
+                                                            <div class="container mt-5">
                                                                 <div>
                                                                     <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Advice/Consulting</h1>
-                                                                    <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
-                                                                </div>
 
 
-                                                                <div class="services-grid mt-5" style="border-radius: 10px; background-color: #D9A426;">
+                                                                <div class="services-grid" style="border-radius: 10px; background-color: #D9A426;">
 
                                                                     <div class="card">
                                                                         <div class="icon-box p-1" style="background-color: #1D3C4D">
@@ -601,7 +665,7 @@
                                                                             Call on one of our experts and we'll guide you to where you want to be in the most cost-effective and efficient way.
                                                                         </p>
                                                                         <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                        <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                                     </div>
 
                                                                     <div class="card">
@@ -616,14 +680,13 @@
                                                                             Schedule an appointment with one of our experts to find an unbiased solution for your specific environment.
                                                                         </p>
                                                                         <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                        <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                                     </div>
 
                                                                     <div class="card d-flex align-items-center justify-content-center">
                                                                         <img src="images/consultation-advisering.png" class="img-fluid p-3" />
                                                                     </div>
                                                                 </div>
-                                                                <br><br>
                                                             </div>
 
                                                         </section>
@@ -634,13 +697,12 @@
 
                                                             <section style="background-color:">
 
-                                                                <div class="container">
+                                                                <div class="container mt-5">
                                                                     <div>
                                                                         <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Backup</h1>
-                                                                        <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
-                                                                    </div>
+                                                                        
 
-                                                                    <div class="services-grid mt-5" style="border-radius: 10px; background-color: #D9A426;">
+                                                                    <div class="services-grid1" style="border-radius: 10px; background-color: #D9A426;">
 
                                                                         <div class="card">
                                                                             <div class="icon-box p-1" style="background-color: #1D3C4D">
@@ -651,7 +713,7 @@
                                                                                 Our Cloud Backup solution stores a complete copy of your backup in our Luxembourg data center, far from any danger. Backups are encrypted when sent and can only be decrypted by restoring the backup.
                                                                             </p>
                                                                             <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                            <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                                         </div>
 
                                                                         <div class="card">
@@ -663,7 +725,7 @@
                                                                                 We can take care of backing up your server to quickly retrieve a deleted file or, in the event of a disaster, get all your servers up and running again in no time, all without you having to invest any time or worry.
                                                                             </p>
                                                                             <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                            <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                                         </div>
 
                                                                         <div class="card">
@@ -676,7 +738,7 @@
                                                                                 someone stealing your Microsoft 365 subscription password is enough to erase or encrypt all your files. Don't hesitate to contact us so we can protect your data from all the threats lurking online.
                                                                             </p>
                                                                             <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                            <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                                         </div>
 
                                                                         <div class="card">
@@ -688,7 +750,7 @@
                                                                                 We can ensure that your website offers a secure connection, thus gaining the trust of Google and the world.
                                                                             </p>
                                                                             <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                            <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                                         </div>
 
                                                                         <div class="card">
@@ -701,12 +763,13 @@
                                                                                 it lacks all of that. Let's ensure that all data is also stored off-site and can be retrieved in the event of a disaster.
                                                                             </p>
                                                                             <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                            <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                                         </div>
 
                                                                     </div>
-                                                                    <br><br>
                                                                 </div>
+
+                                                              
 
                                                             </section>
 
@@ -716,14 +779,13 @@
 
                                                                 <section style="background-color:">
 
-                                                                    <div class="container">
+                                                                    <div class="container mt-5">
 
                                                                         <div>
                                                                             <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Virtual Private System</h1>
-                                                                            <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
-                                                                        </div>
+                                                                            
 
-                                                                        <div class="services-grid mt-5" style="border-radius: 10px; background-color: #D9A426;">
+                                                                        <div class="services-grid" style="border-radius: 10px; background-color: #D9A426;">
 
                                                                             <div class="card">
                                                                                 <div class="icon-box p-1" style="background-color: #1D3C4D">
@@ -736,7 +798,7 @@
                                                                                     Contact us, and we can advise you on the feasibility and, of course, the cost of such a setup.
                                                                                 </p>
                                                                                 <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                                <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                                             </div>
 
                                                                             <div class="card">
@@ -748,7 +810,7 @@
                                                                                     This is perfectly possible with our cloud-based network; we provide a secure network where you can work from anywhere in the world as if you were in the office.
                                                                                 </p>
                                                                                 <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                                <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                                             </div>
 
                                                                             <div class="card text-center">
@@ -770,9 +832,7 @@
 
                                                                             <div>
                                                                                 <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Data Recovery</h1>
-                                                                                <p class="lead mt-3 text-center" style="color: #D9DEE3;">
-                                                                                    Your trusted partner in delivering innovative technology solutions.
-                                                                                </p>
+                                                                               
                                                                             </div>
 
                                                                             <div class="card" style="background-color: #1D3C4D ">
@@ -790,7 +850,7 @@
 
                                                                                                 </p>
                                                                                                 <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                                                <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                                                <a href="contact.html#contactform" class="btn btn-custom-gold btn-lg fs-5">CLICK HERE</a>
                                                                                             </div>
                                                                                             <div class="col-md-6 text-center text-center text-md-end">
                                                                                                 <img src="images/hardware-harddrive-storage.png" class="img-fluid p-3" />
@@ -814,8 +874,7 @@
 
                                                                                 <div>
                                                                                     <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Email Signature</h1>
-                                                                                    <p class="lead mt-3 text-center" style="color: #D9DEE3;">
-                                                                                        Your trusted partner in delivering innovative technology solutions.</h3>
+                                                                                   
                                                                                 </div>
 
                                                                                 <div class="card" style="background-color: #1D3C4D ">
@@ -833,7 +892,7 @@
 
                                                                                                     </p>
                                                                                                     <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                                                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                                                    <a href="contact.html#contactform" class="btn btn-custom-gold btn-lg fs-5">CLICK HERE</a>
                                                                                                 </div>
                                                                                                 <div class="col-md-6 text-center text-center text-md-end">
                                                                                                     <img src="images/email-template-email-signature.png" class="img-fluid p-3" />
@@ -856,8 +915,7 @@
 
                                                                                     <div>
                                                                                         <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Spam Filter</h1>
-                                                                                        <p class="lead mt-3 text-center" style="color: #D9DEE3;">
-                                                                                            Your trusted partner in delivering innovative technology solutions.</h3>
+                                                                                        
                                                                                     </div>
 
                                                                                     <div class="card" style="background-color: #1D3C4D ">
@@ -875,7 +933,7 @@
 
                                                                                                         </p>
                                                                                                         <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                                                        <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                                                        <a href="contact.html#contactform" class="btn btn-custom-gold btn-lg fs-5">CLICK HERE</a>
                                                                                                     </div>
                                                                                                     <div class="col-md-6 text-center text-center text-md-end">
                                                                                                         <img src="images/spamfilter-spam-emails-bad-emails.png" class="img-fluid p-3" />
@@ -898,8 +956,7 @@
 
                                                                                         <div>
                                                                                             <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Apple Support</h1>
-                                                                                            <p class="lead mt-3 text-center" style="color: #D9DEE3;">
-                                                                                                Your trusted partner in delivering innovative technology solutions.</h3>
+                                                                                           
                                                                                         </div>
 
                                                                                         <div class="card" style="background-color: #1D3C4D ">
@@ -918,7 +975,7 @@
 
                                                                                                             </p>
                                                                                                             <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                                                            <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                                                            <a href="contact.html#contactform" class="btn btn-custom-gold btn-lg fs-5">CLICK HERE</a>
                                                                                                         </div>
                                                                                                         <div class="col-md-6 text-center text-center text-md-end">
                                                                                                             <img src="images/yameen-apple-420.jpg" class="img-fluid p-3" style="border-radius:30px" />
@@ -939,14 +996,14 @@
 
                                                                                     <section style="background-color:">
 
-                                                                                        <div class="container" style="padding-top: 50px">
+                                                                                        <div class="container mt-5">
 
                                                                                             <div>
                                                                                                 <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Training</h1>
-                                                                                                <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
+                                                                                                
                                                                                             </div>
 
-                                                                                            <div class="services-grid mt-5" style="border-radius: 10px; background-color: #D9A426;">
+                                                                                            <div class="services-grid" style="border-radius: 10px; background-color: #D9A426;">
 
                                                                                                 <div class="card">
                                                                                                     <div class="icon-box p-1" style="background-color: #0D2533">
@@ -958,7 +1015,7 @@
                                                                                                         We can provide you and your employees with the necessary training to maximize your Microsoft 365 subscriptions within your company and in the way you want to work.
                                                                                                     </p>
                                                                                                     <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                                                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                                                    <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                                                                 </div>
 
                                                                                                 <div class="card">
@@ -970,7 +1027,7 @@
                                                                                                         A short training session can work wonders and take your data security to a whole new level. We'll teach you how to set it up and use it easily, protecting you from password theft and employee manipulation.
                                                                                                     </p>
                                                                                                     <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                                                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                                                    <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                                                                 </div>
 
                                                                                                 <div class="card">
@@ -982,7 +1039,7 @@
                                                                                                         We can provide you with everything you need to work on documents in the cloud, but even more importantly, we can train you to work with complete confidence through proper training.
                                                                                                     </p>
                                                                                                     <h3 class="bold" style="color: #1D3C4D;">Want to know more?</h3>
-                                                                                                    <a href="#Portfolio" class="btn btn-primary btn-lg fs-5">CLICK HERE</a>
+                                                                                                    <a href="contact.html#contactform" class="btn btn-custom-navy btn-lg fs-5">CLICK HERE</a>
                                                                                                 </div>
                                                                                             </div>
 
@@ -999,8 +1056,7 @@
 
                                                                                                 <div>
                                                                                                     <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Contact Us</h1>
-                                                                                                    <p class="lead mt-3 text-center" style="color: #D9DEE3;">
-                                                                                                        Your trusted partner in delivering innovative technology solutions.</h3>
+                                                                                                   
                                                                                                 </div>
 
                                                                                                 <div class="card" style="background-color: #1D3C4D ">
@@ -1031,89 +1087,64 @@
 
                                                                                                     </div>
                                                                                                 </div>
-
-
-
-                                                                                                <div class="services-grid mt-5" style="border-radius: 10px; background-color: #1D3C4D;">
-
-
-                                                                                                    <div class="card">
-                                                                                                        <div class="icon-box p-1" style="background-color: #1D3C4D">
-                                                                                                            <img src="images/location.svg" />
-                                                                                                        </div>
-                                                                                                        <h3 style="color: #1D3C4D;">Address</h3>
-                                                                                                        <p>
-                                                                                                            Herkenrodesingel 4a
-                                                                                                            3500 Hasselt, Belgium
-                                                                                                        </p>
-                                                                                                    </div>
-
-
-                                                                                                    <div class="card">
-                                                                                                        <div class="icon-box p-1" style="background-color: #1D3C4D">
-                                                                                                            <img src="images/phone.svg" />
-                                                                                                        </div>
-                                                                                                        <h3 style="color: #1D3C4D;">Telephone</h3>
-                                                                                                        <p>+32 11 28 08 98</p>
-                                                                                                    </div>
-
-
-                                                                                                    <div class="card">
-                                                                                                        <div class="icon-box p-1" style="background-color: #1D3C4D">
-                                                                                                            <img src="images/mail.svg" />
-                                                                                                        </div>
-                                                                                                        <h3 style="color: #1D3C4D;">Email</h3>
-                                                                                                        <p>info@convilguous.com</p>
-                                                                                                    </div>
-
-                                                                                                </div>
-
-                                                                                                <div class="card mt-5" style="border-radius: 10px; background-color: #1D3C4D;">
-                                                                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.3626155965662!2d5.3797022769772305!3d50.93550665232014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c121017e403b27%3A0xc9bac6477f24ad63!2sConvilguous!5e0!3m2!1sen!2sph!4v1686279749063!5m2!1sen!2sph" height="450" style="border: 0; width: 100%;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                                                                                </div>
-
                                                                                             </div>
-
 
                                                                                     </div>
 
+                                                                                    </section>
+
+                                                                                 
+
+                                                                                    <button id="scrollTopBtn" title="Go to top">&#8593;</button>
+                                                                                    <!-- Footer -->
+
+                                                                                    <section class="container-fluid mt-5">
+
+                                                                                        <div class="card" style="background-color: #0D2533">
+                                                                                            <h3 fw-bold" style="color: #D9A426;">Convilguous Belgium</h3>
+                                                                                            <div class="box">
+                                                                                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                                                                <div class="info">
+                                                                                                    <h3 fw-bold" style="color: #D9A426;">Address</font></font></h3>
+                                                                                                    <p>Herkenrodesingel 4a, 3500 Hasselt</p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="box">
+                                                                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                                                                                <div class="info">
+                                                                                                    <h3 fw-bold" style="color: #D9A426;">Telephone</font></font></h3>
+                                                                                                    <p>+32 11 21 33 08</p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="MapContainer">
+                                                                                                <p>
+                                                                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.3626155965662!2d5.3797022769772305!3d50.93550665232014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c121017e403b27%3A0xc9bac6477f24ad63!2sConvilguous!5e0!3m2!1sen!2sph!4v1686279749063!5m2!1sen!2sph" height="450" style="border: 0; width: 100%;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
 
 
+                                                                                        <div class="text-white text-center mt-5">
+                                                                                            <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Follow us for your own safety!</h1>
+                                                                                            <img src="images/facebook.svg" style="width: 50px;" alt="Facebook" />
+                                                                                            <img src="images/instagram.svg" style="width: 50px;" alt="Instagram" />
+                                                                                            <img src="images/linkedin.svg" style="width: 50px;" alt="LinkedIn" />
+                                                                                        </div>
+                                                                                        <br>
                                                                                 </div>
 
-                                                                            </div>
 
-                                                                            <br><br>
+                                                                        <nav class=" navbar navbar-expand-sm navbar-dark" style="background-color: #0D2533">
 
-                                                                            </section>
+                                                                            <div class="container justify-content-center">
+                                                                                <span class="navbar-text">
 
-                                                                            <hr>
-
-                                                                            <!-- Footer -->
-
-                                                                            <div class="container">
-
-                                                                                <!-- Footer -->
-
-                                                                                <div class="text-white text-center">
-                                                                                    <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Follow us for your own safety!</h1>
-                                                                                    <img src="images/facebook.svg" style="width: 50px;" alt="Facebook" />
-                                                                                    <img src="images/instagram.svg" style="width: 50px;" alt="Instagram" />
-                                                                                    <img src="images/linkedin.svg" style="width: 50px;" alt="LinkedIn" />
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <button id="scrollTopBtn" title="Go to top">&#8593;</button>
-
-                                                                            <nav class=" navbar navbar-expand-sm navbar-dark" style="background-color: #0D2533">
-
-                                                                                <div class="container justify-content-center">
-                                                                                    <span class="navbar-text">
-
-                                                                                        &copy; 2026 - Convilguous - Privacy
+                                                                                    &copy; 2026 - Convilguous - Privacy
 
 
-                                                                                    </span>
+                                                                                </span>
+
+                                                                                </section>
 
 
 
@@ -1132,27 +1163,28 @@
 
 
 
-                                                                                    <script>
-                                                                                        // Paste the JavaScript code here
-                                                                                        const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-                                                                                        // Show the button when the user scrolls down 200px from the top
-                                                                                        window.onscroll = function () {
-                                                                                            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                                                                                                scrollTopBtn.style.display = "block";
-                                                                                            } else {
-                                                                                                scrollTopBtn.style.display = "none";
-                                                                                            }
-                                                                                        };
+                                                                                <script>
+                                                                                    // Paste the JavaScript code here
+                                                                                    const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-                                                                                        // When the user clicks the button, scroll to the top
-                                                                                        scrollTopBtn.addEventListener("click", () => {
-                                                                                            window.scrollTo({
-                                                                                                top: 0,
-                                                                                                behavior: "smooth" // This creates the smooth gliding effect
-                                                                                            });
+                                                                                    // Show the button when the user scrolls down 200px from the top
+                                                                                    window.onscroll = function () {
+                                                                                        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                                                                                            scrollTopBtn.style.display = "block";
+                                                                                        } else {
+                                                                                            scrollTopBtn.style.display = "none";
+                                                                                        }
+                                                                                    };
+
+                                                                                    // When the user clicks the button, scroll to the top
+                                                                                    scrollTopBtn.addEventListener("click", () => {
+                                                                                        window.scrollTo({
+                                                                                            top: 0,
+                                                                                            behavior: "smooth" // This creates the smooth gliding effect
                                                                                         });
-                                                                                    </script>
+                                                                                    });
+                                                                                </script>
 </body>
 </html>
 

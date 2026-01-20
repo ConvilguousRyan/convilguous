@@ -17,6 +17,33 @@ body {
     border: 1px solid #e2e8f0;
 }
 
+.services-grid1 {
+    display: grid;
+    /* This creates 3 equal columns on desktop */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Adjust spacing between cards */
+    padding: 30px;
+}
+
+
+
+/* Responsive adjustment for tablets and phones */
+@media (max-width: 992px) {
+    .services-grid1 {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid1 {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+}
+
+
+
+
+
 /* Individual Card Styling */
 .card {
     background: #ffffff;
@@ -86,3 +113,85 @@ a {
     max-width: 100%;
     height: auto;
 }
+
+.container1 {
+    position: relative; /* This is the anchor */
+    width: 0px;
+    height: 0px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.absolute-image {
+    position: absolute; /* This pulls it out of the normal document flow */
+    top: -600px; /* Distance from the top of the container */
+    left: 740px; /* Distance from the left of the container */
+    width: 750px; /* Optional: set size */
+}
+
+/* This hides the image when the screen is 600px wide or smaller */
+/*
+@media (max-width: 1500px) {
+    .absolute-image {
+        display: none;
+    }
+}*/
+
+
+/* 1. The Normal State */
+.btn-custom-gold {
+    background-color: #D9A426;
+    border-color: #D9A426;
+    color: #ffffff;
+}
+
+    /* 2. The Hover State (Mouse over) */
+    .btn-custom-gold:hover {
+        background-color: #c29221;
+        border-color: #c29221;
+    }
+
+    /* 3. The Active State (While being pressed) */
+    .btn-custom-gold:active,
+    .btn-custom-gold:focus {
+        background-color: #a67d1d !important; /* Noticeably darker gold */
+        border-color: #a67d1d !important;
+        box-shadow: 0 0 0 0.25rem rgba(217, 164, 38, 0.5); /* Adds a subtle gold glow */
+    }
+
+
+/* 1. The Normal State (#1D3C4D) */
+.btn-custom-navy {
+    background-color: #1D3C4D;
+    border-color: #1D3C4D;
+    color: #ffffff;
+}
+
+    /* 2. The Hover State (Slightly lighter or darker) */
+    .btn-custom-navy:hover {
+        background-color: #152d3a; /* Darker shade of navy */
+        border-color: #152d3a;
+        color: #ffffff;
+    }
+
+    /* 3. The Active State (While being pressed) */
+    .btn-custom-navy:active,
+    .btn-custom-navy:focus {
+        background-color: #0e1e27 !important; /* Noticeably darker navy */
+        border-color: #0e1e27 !important;
+        box-shadow: 0 0 0 0.25rem rgba(29, 60, 77, 0.5); /* Navy glow */
+    }
+
+
+/*Carousel - prevent the "movement" or layout shifting of your carousel while it transitions*/
+
+#mainCarousel .carousel-inner {
+    min-height: 500px; /* Adjust this value based on your longest slide */
+    display: flex;
+    align-items: center; /* This keeps shorter text centered vertically */
+}
+
+#mainCarousel .carousel-item {
+    height: 400px; /* Adjust to fit your content */
+}
+

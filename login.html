@@ -1,36 +1,32 @@
 <!doctype html>
 <html lang="en">
 <head>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Convilguous</title>
+    <title>Convilguous 2.0</title>
 
     <!-- Bootstrap 5 CSS (CDN) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-    <link href="css/bento.css" rel="stylesheet" />
-    <link rel="icon" href="images/logo.svg" sizes="any">
-    <link rel="icon" type="image/svg+xml" href="images/logo.jpeg">
-    <link rel="apple-touch-icon" href="images/logo.jpeg">
-    <link rel="manifest" href="/site.webmanifest">
-
+    <link rel="icon" type="image/x-icon" href="images/Logo-small.svg">
 </head>
 
-<body>
+<body class="bg-light">
+
 
     <!-- Example: Brand/Logo + Navbar Text -->
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #0D2533;">
+    <nav class=" navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #0D2533">
         <div class="container-fluid">
             <!-- Brand / Logo -->
-            <a class="navbar-brand d-flex align-items-center gap-2" href="#Home">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html#home">
                 <!-- Using an image: Bootstrap will size/align it nicely in the navbar -->
-                <img src="images/logo.svg"
+                <img src="images/Logo-small.svg"
                      alt="Logo"
-                     width="300"
-                     height="auto"
+                     width="32"
+                     height="32"
                      class="rounded" />
-
+                <span>CONVILGUOUS</span>
             </a>
 
             <!-- Toggler (for small screens) -->
@@ -46,124 +42,168 @@
 
             <div class="collapse navbar-collapse" id="mainNavbar">
                 <!-- Left links -->
-                <ul class="navbar-nav ms-auto mb-2 mb-sm-0 align-items-center">
-
+                <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
                     <li class="nav-item">
-                        <a class="nav-link fs-5 p-3" href="index.html#Home">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5 p-3" href="#Solutions">Solutions</a>
+                        <a class="nav-link" href="index.html#solution">Solution</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5 p-3" href="#Consulting">Consulting</a>
+                        <a class="nav-link" href="index.html#consulting">Consulting</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5 p-3" href="#Training">Training</a>
+                        <a class="nav-link" href="index.html#training">Training</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5 p-3" href="#Team">Team</a>
+                        <a class="nav-link" href="team.html#team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5 p-3" href="#Contact">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="btn btn-primary btn-lg fs-5 p-3">Login</a>
-
+                        <a class="nav-link" href="index.html#contact">Contact Us</a>
                     </li>
                 </ul>
+
+                <!-- Navbar text (non-link content aligned vertically) -->
+                <span class="navbar-item">
+                    <a href="#login" class="btn btn-custom-gold btn-lg fs-5">Login</a>
+                </span>
             </div>
         </div>
-
     </nav>
 
 
-    <!-- login -->
+    <!-- Login -->
+    <div id="login">
 
-    <section style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/bg.png'); background-size: cover; background-position: center;" class="p-4 p-md-5" id="Home">
+        <section style="background-color:">
 
-        <div class="container-fluid" style="padding: 200px 0 0 0;">
+            <div class="container" style="padding-top: 150px">
+                <div>
+                    <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Login</h1>
+                    <p class="lead mt-3 text-center" style="color: #D9DEE3;">Your trusted partner in delivering innovative technology solutions.</h3>
+                </div>
 
+                <div class="container py-5">
+                    <div class="row align-items-center min-vh-75">
 
-            <div class="container py-5">
-                <div class="row align-items-center min-vh-75">
-
-                    <div class="col-lg-6 d-none d-lg-block text-center">
-                        <img src="images/convilguous-belgium-team-group2.png" class="img-fluid floating-anim" alt="Team Illustration">
-                    </div>
-
-
-
-                    <div class="col-lg-5 offset-lg-1 text-bg-light login-card p-4 p-md-5">
-                        <div class="text-center mb-4">
-                            <h2 class="fw-bold text-dark">Welcome Back</h2>
-                            <p class="text-muted">Enter your credentials to access your account</p>
+                        <div class="col-lg-6 d-none d-lg-block text-center">
+                            <img src="images/convilguous-belgium-team-group2.png" class="img-fluid floating-anim" alt="Team Illustration">
                         </div>
 
-                        <form method="post">
-                            <div class="mb-3">
-                                <label class="form-label small fw-bold">Email Address</label>
-                                <div class="input-group">
-                                    <span class="input-group-text bg-white"><i class="fa fa-envelope text-muted"></i></span>
-                                    <input type="email" class="form-control border-start-0" placeholder="name@company.com" required>
-                                </div>
+
+
+                        <div class="col-lg-5 offset-lg-1 text-bg-light login-card p-4 p-md-5">
+                            <div class="text-center mb-4">
+                                <h2 class="fw-bold" style="color: #1D3C4D;">Welcome Back</h2>
+                                <p class="text-muted">Enter your credentials to access your account</p>
                             </div>
 
-                            <div class="mb-3">
-                                <label class="form-label small fw-bold">Password</label>
-                                <div class="input-group">
-                                    <span class="input-group-text bg-white"><i class="fa fa-lock text-muted"></i></span>
-                                    <input type="password" id="passwordField" class="form-control border-start-0 border-end-0" placeholder="••••••••" required>
-                                    <span class="input-group-text bg-white" style="cursor: pointer;" onclick="togglePass()">
-                                        <i id="eyeIcon" class="fa fa-eye-slash text-muted"></i>
-                                    </span>
+                            <form method="post">
+                                <div class="mb-3">
+                                    <label class="form-label small fw-bold" style="color: #1D3C4D;">Email Address</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-white"><i class="fa fa-envelope text-muted"></i></span>
+                                        <input type="email" class="form-control border-start-0" placeholder="name@company.com" required>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="d-flex justify-content-between align-items-center mb-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="rememberMe">
-                                    <label class="form-check-label small" for="rememberMe">Remember me</label>
+                                <div class="mb-3">
+                                    <label class="form-label small fw-bold" style="color: #1D3C4D;">Password</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-white"><i class="fa fa-lock text-muted"></i></span>
+                                        <input type="password" id="passwordField" class="form-control border-start-0 border-end-0" placeholder="••••••••" required>
+                                        <span class="input-group-text bg-white" style="cursor: pointer;" onclick="togglePass()">
+                                            <i id="eyeIcon" class="fa fa-eye-slash text-muted"></i>
+                                        </span>
+                                    </div>
                                 </div>
-                                <a href="#" class="small text-decoration-none">Forgot Password?</a>
-                            </div>
 
-                            <button type="submit" class="btn btn-primary w-100 py-2 fw-bold mb-3 shadow-sm">
-                                Sign In
-                            </button>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rememberMe">
+                                        <label class="form-check-label small" for="rememberMe">Remember me</label>
+                                    </div>
+                                    <a href="#" class="small text-decoration-none">Forgot Password?</a>
+                                </div>
 
-                            <button type="button" class="btn btn-outline-secondary w-100 py-2 fw-bold">
-                                Create Account
-                            </button>
-                        </form>
+                                <button type="submit" class="btn btn-custom-gold w-100 py-2 fw-bold mb-3 shadow-sm">
+                                    Sign In
+                                </button>
+
+                                <button type="button" class="btn btn-custom-navy w-100 py-2 fw-bold">
+                                    Create Account
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+                </div>
 
-    </section>
+                <button id="scrollTopBtn" title="Go to top">&#8593;</button>
+                <!-- Footer -->
+
+                <section class="container-fluid">
+
+                    <div class="card mt-5" style="background-color: #0D2533">
+                        <h3 fw-bold" style="color: #D9A426;">Convilguous Belgium</h3>
+                        <div class="box">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <div class="info">
+                                <h3 fw-bold" style="color: #D9A426;">Address</font></font></h3>
+                                <p>Herkenrodesingel 4a, 3500 Hasselt</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <div class="info">
+                                <h3 fw-bold" style="color: #D9A426;">Telephone</font></font></h3>
+                                <p>+32 11 21 33 08</p>
+                            </div>
+                        </div>
+                        <div class="MapContainer">
+                            <p>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.3626155965662!2d5.3797022769772305!3d50.93550665232014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c121017e403b27%3A0xc9bac6477f24ad63!2sConvilguous!5e0!3m2!1sen!2sph!4v1686279749063!5m2!1sen!2sph" height="450" style="border: 0; width: 100%;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </p>
+                        </div>
+                    </div>
 
 
-        <!-- Footer -->
-
-
-        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #0D2533;">
-            <div class="container-fluid justify-content-center">
-
-                <span class="navbar-text">
-
-                    <div class="text-white text-center">
-                        <h1 class="display-5 fw-bold">Follow us for your own safety!</h1>
+                    <div class="text-white text-center mt-5">
+                        <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Follow us for your own safety!</h1>
                         <img src="images/facebook.svg" style="width: 50px;" alt="Facebook" />
                         <img src="images/instagram.svg" style="width: 50px;" alt="Instagram" />
                         <img src="images/linkedin.svg" style="width: 50px;" alt="LinkedIn" />
                     </div>
                     <br>
+            </div>
 
-                    <div class="text-center">
-                        &copy; 2026 - Convilguous - Privacy
-                    </div>
 
-                </span>
+                    <nav class=" navbar navbar-expand-sm navbar-dark" style="background-color: #0D2533">
+
+                        <div class="container justify-content-center">
+                            <span class="navbar-text">
+
+                                &copy; 2026 - Convilguous - Privacy
+
+
+                            </span>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -194,11 +234,18 @@
 
 
 
+
+
 <!-- Bootstrap 5 JS (CDN) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-</body>
-</html>
+
+
+
+
+
+
+
 
 
 

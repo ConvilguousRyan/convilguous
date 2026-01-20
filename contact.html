@@ -1,37 +1,33 @@
 <!doctype html>
 <html lang="en">
 <head>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Convilguous</title>
+    <title>Convilguous 2.0</title>
 
     <!-- Bootstrap 5 CSS (CDN) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-    <link href="css/bento.css" rel="stylesheet" />
     <link href="css/form.css" rel="stylesheet" />
-    <link rel="icon" href="images/logo.svg" sizes="any">
-    <link rel="icon" type="image/svg+xml" href="images/logo.jpeg">
-    <link rel="apple-touch-icon" href="images/logo.jpeg">
-    <link rel="manifest" href="/site.webmanifest">
-
+    <link rel="icon" type="image/x-icon" href="images/Logo-small.svg">
 </head>
 
-<body>
+<body class="bg-light">
+
 
     <!-- Example: Brand/Logo + Navbar Text -->
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #0D2533;">
+    <nav class=" navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #0D2533">
         <div class="container-fluid">
             <!-- Brand / Logo -->
-            <a class="navbar-brand d-flex align-items-center gap-2" href="#Home">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html#home">
                 <!-- Using an image: Bootstrap will size/align it nicely in the navbar -->
-                <img src="images/logo.svg"
+                <img src="images/Logo-small.svg"
                      alt="Logo"
-                     width="300"
-                     height="auto"
+                     width="32"
+                     height="32"
                      class="rounded" />
-
+                <span>CONVILGUOUS</span>
             </a>
 
             <!-- Toggler (for small screens) -->
@@ -47,97 +43,211 @@
 
             <div class="collapse navbar-collapse" id="mainNavbar">
                 <!-- Left links -->
-                <ul class="navbar-nav ms-auto mb-2 mb-sm-0 align-items-center">
-
+                <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
                     <li class="nav-item">
-                        <a class="nav-link fs-5 p-3" href="index.html#Home">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5 p-3" href="#Solutions">Solutions</a>
+                        <a class="nav-link" href="index.html#solution">Solution</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5 p-3" href="#Consulting">Consulting</a>
+                        <a class="nav-link" href="index.html#consulting">Consulting</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5 p-3" href="#Training">Training</a>
+                        <a class="nav-link" href="index.html#training">Training</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5 p-3" href="#Team">Team</a>
+                        <a class="nav-link" href="team.html#team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5 p-3" href="#Contact">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="login.html" class="btn btn-primary btn-lg fs-5 p-3">Login</a>
-
+                        <a class="nav-link" href="index.html#contact">Contact Us</a>
                     </li>
                 </ul>
+
+                <!-- Navbar text (non-link content aligned vertically) -->
+                <span class="navbar-text">
+                    <a href="login.html#login" class="btn btn-custom-gold btn-lg fs-5">Login</a>
+                </span>
             </div>
         </div>
-
     </nav>
 
 
     <!-- Contact Form -->
+    <div id="contactform">
 
-    <div class="page-wrapper">
-        <div class="person left-person">
-            <img src="images/left.png" alt="Man pointing">
-        </div>
+        <section style="background-color:">
 
-        <main class="form-container">
-            <h1>How can we help?</h1>
-            <p class="subtitle">Want to know more about the solution you're looking for? Here's how to get help from our experts.</p>
+            <div class="container" style="padding-top: 150px">
 
-            <form>
-                <div class="checkbox-grid">
-                    <label><input type="checkbox"> Monitoring</label>
-                    <label><input type="checkbox" checked> Backup Solutions</label>
-                    <label><input type="checkbox"> Security</label>
-                    <label><input type="checkbox"> Offshore Developers</label>
-                </div>
 
-                <div class="form-body">
-                    <div class="input-columns">
-                        <input type="text" placeholder="Name">
-                        <input type="text" placeholder="Company (Optional)">
-                        <input type="email" placeholder="Email" class="gray-bg">
-                        <input type="tel" placeholder="Phone" class="gray-bg">
-                        <input type="text" placeholder="WhatsApp" class="gray-bg half-width">
+                <main class="form-container card">
+                    <h1 class="display-5 fw-bold text-center" style="color: #1D3C4D; ">How can we help?</h1>
+                    <p class="lead text-center" ;">Want to know more about the solution you're looking for? Here's how to get help from our experts.</p>
+
+                    <form>
+                        <div class="checkbox-grid mt-5">
+                            <label><input type="checkbox"> Monitoring</label>
+                            <label><input type="checkbox" checked> Backup Solutions</label>
+                            <label><input type="checkbox"> Security</label>
+                            <label><input type="checkbox"> Training</label>
+                            <label><input type="checkbox"> Consulting</label>
+                            <label><input type="checkbox"> Data Recovery</label>
+                            <label><input type="checkbox"> Software Development</label>
+                            <label><input type="checkbox"> Email Signatures</label>
+                            <label><input type="checkbox"> Apple Support</label>
+                            <label><input type="checkbox"> Spamfilter</label>
+                            <label><input type="checkbox"> Domain Names</label>
+                            <label><input type="checkbox"> Hosted Exchange</label>
+                            <label><input type="checkbox"> Cloud servers</label>
+                            <label><input type="checkbox"> Certificates</label>
+                            <label><input type="checkbox"> Hosted SQL</label>
+                            <label><input type="checkbox"> Cloud Storage</label>
+                            <label><input type="checkbox"> Web Hosting</label>
+                            <label><input type="checkbox"> XFGShortUrl Solutions</label>
+                            <label><input type="checkbox"> Maintenance Contracts</label>
+                            <label><input type="checkbox"> Offshore Developers</label>
+                        </div>
+
+                        <div class="form-body">
+                            <div class="input-columns">
+                                <input type="text" placeholder="Name">
+                                <input type="text" placeholder="Company (Optional)">
+                                <input type="email" placeholder="Email" class="gray-bg">
+                                <input type="tel" placeholder="Phone" class="gray-bg">
+                                <input type="text" placeholder="WhatsApp" class="gray-bg half-width">
+                            </div>
+
+                            <div class="message-area">
+                                <label>Message <small>(Optional)</small></label>
+                                <textarea placeholder="Type here..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="contact-preference">
+                            <p>How would you like us to contact you?</p>
+                            <label>By Email <input type="checkbox"></label>
+                            <label>By WhatsApp <input type="checkbox"></label>
+                            <label>By Phone <input type="checkbox"></label>
+                        </div>
+
+                        <button type="submit" class="submit-btn btn-custom-gold">Submit</button>
+                    </form>
+                </main>
+            </div>
+
+
+
+        </section>
+
+        <button id="scrollTopBtn" title="Go to top">&#8593;</button>
+        <!-- Footer -->
+
+        <section class="container-fluid mt-5">
+
+            <div class="card" style="background-color: #0D2533">
+                <h3 fw-bold" style="color: #D9A426;">Convilguous Belgium</h3>
+                <div class="box">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <div class="info">
+                        <h3 fw-bold" style="color: #D9A426;">Address</font></font></h3>
+                        <p>Herkenrodesingel 4a, 3500 Hasselt</p>
                     </div>
-
-                    <div class="message-area">
-                        <label>Message <small>(Optional)</small></label>
-                        <textarea placeholder="Type here..."></textarea>
+                </div>
+                <div class="box">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <div class="info">
+                        <h3 fw-bold" style="color: #D9A426;">Telephone</font></font></h3>
+                        <p>+32 11 21 33 08</p>
                     </div>
                 </div>
-
-                <div class="contact-preference">
-                    <p>How would you like us to contact you?</p>
-                    <label>By Email <input type="checkbox"></label>
-                    <label>By WhatsApp <input type="checkbox"></label>
-                    <label>By Phone <input type="checkbox"></label>
+                <div class="MapContainer">
+                    <p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.3626155965662!2d5.3797022769772305!3d50.93550665232014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c121017e403b27%3A0xc9bac6477f24ad63!2sConvilguous!5e0!3m2!1sen!2sph!4v1686279749063!5m2!1sen!2sph" height="450" style="border: 0; width: 100%;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </p>
                 </div>
-
-                <button type="submit" class="submit-btn">Submit</button>
-            </form>
-        </main>
-
-        <div class="person right-person">
-            <img src="images/right.png" alt="Woman leaning">
-        </div>
-    </div>
+            </div>
 
 
-       
+            <div class="text-white text-center mt-5">
+                <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Follow us for your own safety!</h1>
+                <img src="images/facebook.svg" style="width: 50px;" alt="Facebook" />
+                <img src="images/instagram.svg" style="width: 50px;" alt="Instagram" />
+                <img src="images/linkedin.svg" style="width: 50px;" alt="LinkedIn" />
+            </div>
+            <br>
+
+
+
+            <nav class=" navbar navbar-expand-sm navbar-dark" style="background-color: #0D2533">
+
+                <div class="container justify-content-center">
+                    <span class="navbar-text">
+
+                        &copy; 2026 - Convilguous - Privacy
+
+                    </span>
+                </div>
+            </nav>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            // Paste the JavaScript code here
+            const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+            // Show the button when the user scrolls down 200px from the top
+            window.onscroll = function () {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    scrollTopBtn.style.display = "block";
+                } else {
+                    scrollTopBtn.style.display = "none";
+                }
+            };
+
+            // When the user clicks the button, scroll to the top
+            scrollTopBtn.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth" // This creates the smooth gliding effect
+                });
+            });
+        </script>
+</body>
+</html>
+
+
+
 
 
 
 <!-- Bootstrap 5 JS (CDN) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-</body>
-</html>
+
+
+
+
+
+
+
 
 
 
