@@ -175,16 +175,16 @@
 
 
                 </div>
-               
+
             </div>
 
 
         </section>
 
-        <button id="scrollTopBtn" title="Go to top">&#8593;</button>
+
         <!-- Footer -->
 
-        <section class="container-fluid">
+        <section class="container">
 
             <div class="card mt-5" style="background-color: #0D2533">
                 <h3 fw-bold" style="color: #D9A426;">Convilguous Belgium</h3>
@@ -208,7 +208,9 @@
                     </p>
                 </div>
             </div>
+        </section>
 
+        
 
             <div class="text-white text-center mt-5">
                 <h1 class="display-5 fw-bold text-center" style="color: #D9A426; ">Follow us for your own safety!</h1>
@@ -219,20 +221,18 @@
             <br>
     </div>
 
+    <button id="scrollTopBtn" title="Go to top">&#8593;</button>
+    <nav class=" navbar navbar-expand-sm navbar-dark" style="background-color: #0D2533">
 
-        <nav class=" navbar navbar-expand-sm navbar-dark" style="background-color: #0D2533">
+        <div class="container justify-content-center">
+            <span class="navbar-text">
 
-            <div class="container justify-content-center">
-                <span class="navbar-text">
-
-                    &copy; 2026 - Convilguous - Privacy
-
-
-                </span>
-
-</section>
+                &copy; 2026 - Convilguous - Privacy
 
 
+            </span>
+
+            
 
 
 
@@ -249,27 +249,29 @@
 
 
 
-                <script>
-                    // Paste the JavaScript code here
-                    const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-                    // Show the button when the user scrolls down 200px from the top
-                    window.onscroll = function () {
-                        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                            scrollTopBtn.style.display = "block";
-                        } else {
-                            scrollTopBtn.style.display = "none";
-                        }
-                    };
 
-                    // When the user clicks the button, scroll to the top
-                    scrollTopBtn.addEventListener("click", () => {
-                        window.scrollTo({
-                            top: 0,
-                            behavior: "smooth" // This creates the smooth gliding effect
-                        });
+            <script>
+                // Paste the JavaScript code here
+                const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+                // Show the button when the user scrolls down 200px from the top
+                window.onscroll = function () {
+                    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                        scrollTopBtn.style.display = "block";
+                    } else {
+                        scrollTopBtn.style.display = "none";
+                    }
+                };
+
+                // When the user clicks the button, scroll to the top
+                scrollTopBtn.addEventListener("click", () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth" // This creates the smooth gliding effect
                     });
-                </script>
+                });
+            </script>
 </body>
 </html>
 
